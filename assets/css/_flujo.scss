@@ -1,0 +1,122 @@
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+
+$colorLetra: rgb(255, 255, 255);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+$fondoBoton: rgb(45, 130, 241);
+$fondoBotonHover: rgb(25, 25, 233);
+$fondoPagina: #111827;
+$fondoPagina2: #19212e;
+$colorExtras: #182b4b;
+$colorLetra2: rgb(211, 211, 211);
+$colorLetra3: rgb(22, 143, 190);
+
+.flujoDeTrabajo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: $fondoPagina;
+    height: 45vw;
+    padding-left: 2vw;
+
+    h2 {
+        background: linear-gradient(rgb(156, 175, 240), rgb(129, 28, 223));
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: $fuenteBold;
+        font-size: 4vw;
+    }
+
+    p {
+        font-family: $fuenteNormal;
+        font-size: 1.8vw;
+        font-weight: 700;
+        color: $colorLetra2;
+        width: 80vw;
+    }
+
+    a {
+        button {
+            background-color: $fondoBoton;
+            border: none;
+            padding: 10px 5px 10px 5px;
+            border-radius: 50px;
+            height: 5vw;
+            width: 40vw;
+            font-family: $fuenteBold;
+            color: $colorLetra;
+            font-size: 2vw;
+            transition: all .4s ease-in-out;
+
+            &:hover {
+                background-color: $fondoBotonHover;
+            }
+        }
+    }
+}
+
+
+.mapaFlujoTrabajo {
+    background-color: $fondoPagina2;
+    padding-bottom: 4vw;
+
+    .servicios {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+
+        .servicio {
+            background-color: $fondoPagina;
+            padding-block: 2vw;
+            width: 90%;
+            text-align: center;
+            border-radius: 20px;
+            transition: all .3s ease-in-out;
+            &:hover{
+                transform: scale(1.04);
+            }
+            h3{
+                font-family: $fuenteBold;
+                background: linear-gradient(rgb(156, 175, 240), rgb(129, 28, 223));
+                -webkit-background-clip: text;
+                color: transparent;
+                margin: 0;
+                font-size: 2.5vw;
+            }
+        }
+    }
+}
+
+.proyectos{
+    background-color: $fondoPagina;
+    padding-bottom: 5vw;
+    .progreso{
+        margin-inline: 5vw;
+        background-color: $fondoPagina2;
+        padding: 3vw;
+        border-radius: 20px;
+        h3{
+            color: $colorLetra3;
+            font-family: $fuenteBold;
+        }
+        p{
+            color: $colorLetra2;
+            font-family: $fuenteNormal;
+        }
+        .progress{
+            .progress-bar{
+                font-family: $fuenteNormal;
+            }
+        }
+    }
+}

@@ -1,0 +1,213 @@
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+
+$colorLetra: rgb(255, 255, 255);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+$fondoBoton: rgb(45, 130, 241);
+$fondoBotonHover: rgb(25, 25, 233);
+$fondoPagina: #111827;
+$fondoPagina2: #19212e;
+$colorExtras: #182b4b;
+$colorVineta: rgb(177, 50, 182);
+$fondoVinetaHover: rgb(120, 40, 122);
+$colorTitulo: rgb(138, 150, 255);
+$colorExtra2: rgb(177, 177, 177);
+$breakpoint-alpha: 480px; 
+$colorTitulo2: #dd5;
+$estados: (
+    1: rgb(17, 190, 17)
+);
+
+.bannerProyectos {
+    background-image: url(../img/bannerProyectos.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+
+    h2 {
+        color: $colorLetra;
+        font-family: $fuenteBold;
+        font-size: 4vw;
+    }
+
+    p {
+        font-family: $fuenteNormal;
+        font-size: 1.5vw;
+        color: $colorLetra;
+        font-weight: 700;
+    }
+}
+
+.resumenGeneral {
+    background-color: $fondoPagina;
+    padding-block: 5vw;
+
+    h2 {
+        text-align: center;
+        color: $colorLetra;
+        font-family: $fuenteBold;
+        font-size: 2.9vw;
+    }
+
+    .resumen {
+        padding-top: 2.3vw;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        color: $colorLetra;
+        text-align: center;
+
+        .seccionResumen {
+            background-color: $colorExtras;
+            padding: 1vw 1vw 3vw 1.3vw;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    font-size: 2.5vw;
+                    font-family: $fuenteBold;
+                    background: linear-gradient(rgb(156, 175, 240),rgb(129, 28, 223));
+                    -webkit-background-clip: text;
+                    color: transparent; 
+                }
+            }
+
+            h3 {
+                font-family: $fuenteBold;
+                font-size: 1.9vw;
+            }
+        }
+    }
+}
+
+.listado {
+    background-color: $fondoPagina2;
+    padding-block: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+        color: $colorLetra;
+        font-family: $fuenteBold;
+        font-size: 2.9vw;
+    }
+
+ 
+
+    .rwd-table {
+        margin: 4vw 0;
+        width: 80%; 
+        .trHead {
+            background-color: $colorExtras;
+            th{
+                color: $colorTitulo2;
+                font-family: $fuenteBold;
+            }
+        }
+        .trBody{
+            background-color: $fondoPagina;
+            td{
+                color: $fuenteNormal;
+                font-weight: 700;
+                font-size: 1.3vw;
+                color: $colorLetra;
+            }
+            .estado{
+                p{
+                    margin: 0;
+                    background-color: map-get($estados, 1);
+                    text-align: center;
+                    border-radius: 50px;
+                }
+            }
+        }
+
+        th {
+            display: none;  
+        }
+
+        td {
+            display: block;
+
+            &:first-child {
+                padding-top: .5em;
+            }
+
+            &:last-child {
+                padding-bottom: .5em;
+            }
+
+            &:before {
+                content: attr(data-th)": "; 
+                font-weight: bold;
+
+                width: 6.5em; 
+                display: inline-block;
+
+                @media (min-width: $breakpoint-alpha) {
+                    display: none;
+                }
+            }
+        }
+
+        th,
+        td {
+            text-align: left;
+
+            @media (min-width: $breakpoint-alpha) {
+                display: table-cell;
+                padding: .25em .5em;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+
+        }
+
+
+    }
+    .rwd-table {
+        tr {
+            border-color: lighten(#34495E, 10%);
+        }
+        th,
+        td {
+            margin: .5em 1em;
+
+            @media (min-width: $breakpoint-alpha) {
+                padding: 1em !important;
+            }
+        }
+        th,
+        td:before {
+            color: #dd5;
+        }
+    }
+}

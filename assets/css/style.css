@@ -1,0 +1,1229 @@
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+.bannerInicio {
+  background-image: url(../img/bannerIntranet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; }
+  .bannerInicio h2 {
+    font-family: garet-bold;
+    font-size: 3.5vw;
+    background: linear-gradient(#9caff0, #811cdf);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .bannerInicio p {
+    font-family: garet-normal;
+    font-size: 2vw; }
+
+.documentosRecientes {
+  background-color: #111827;
+  padding-block: 5vw;
+  text-align: center;
+  padding-inline: 2vw; }
+  .documentosRecientes .documentos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center; }
+    .documentosRecientes .documentos .archivo {
+      width: 100%; }
+      .documentosRecientes .documentos .archivo p {
+        background-color: #19212e;
+        color: white;
+        font-family: garet-normal;
+        font-weight: 700;
+        font-size: 1.5vw;
+        margin: 0;
+        padding-block: 1.5vw;
+        border-radius: 10px 10px 0 0; }
+
+.moduloProductividad {
+  background-color: #19212e; }
+  .moduloProductividad .modulos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr); }
+    .moduloProductividad .modulos .modulosKpis {
+      color: white;
+      background-color: #111827;
+      width: 90%;
+      padding: 40px 0 10px 0;
+      border-radius: 20px;
+      margin-bottom: 8vw; }
+      .moduloProductividad .modulos .modulosKpis .iconModulo {
+        font-size: 3vw; }
+        .moduloProductividad .modulos .modulosKpis .iconModulo i {
+          background: linear-gradient(#9caff0, #811cdf);
+          -webkit-background-clip: text;
+          color: transparent; }
+        .moduloProductividad .modulos .modulosKpis .iconModulo h3 {
+          font-size: 2.2vw;
+          font-family: garet-bold; }
+      .moduloProductividad .modulos .modulosKpis .modulosLista {
+        list-style-type: none;
+        font-family: garet-normal;
+        font-size: 1.2vw;
+        padding: 0; }
+
+.novedades {
+  background-color: #111827; }
+  .novedades h2 {
+    margin: 0; }
+  .novedades .card {
+    width: 100%;
+    background-color: #111827;
+    border: none;
+    margin-top: 4vw;
+    padding-bottom: 4vw; }
+    .novedades .card .card-header img {
+      width: 100%;
+      border-radius: 30px; }
+    .novedades .card .card-body {
+      margin-left: 2vw;
+      color: white; }
+      .novedades .card .card-body h5 {
+        font-family: garet-bold;
+        font-size: 4vw; }
+      .novedades .card .card-body p {
+        font-family: garet-normal;
+        font-size: 1.5vw; }
+      .novedades .card .card-body a {
+        font-family: garet-bold;
+        font-size: 2vw; }
+
+.soporte {
+  background-color: #19212e; }
+  .soporte .container .row .col .accordion .accordion-item .accordion-header .accordion-button {
+    background-color: #182b4b;
+    color: white; }
+    .soporte .container .row .col .accordion .accordion-item .accordion-header .accordion-button:after {
+      color: white; }
+  .soporte .container .row .col .accordion .accordion-item .accordion-collapse {
+    background-color: #111827;
+    color: white; }
+  .soporte .container .row .col .mb-3 {
+    position: relative;
+    bottom: 2vw; }
+    .soporte .container .row .col .mb-3 label {
+      color: white;
+      font-family: garet-bold;
+      font-size: 3vw; }
+    .soporte .container .row .col .mb-3 .form-control {
+      height: 20vw;
+      background-color: #141825;
+      color: white;
+      font-family: garet-normal;
+      font-weight: 700; }
+    .soporte .container .row .col .mb-3 button {
+      margin-top: 2vw;
+      width: 90%;
+      font-family: garet-bold;
+      font-size: 1.3vw; }
+      .soporte .container .row .col .mb-3 button i {
+        margin-right: 1vw; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+.navbar {
+  position: absolute !important; }
+  .navbar .container-fluid .navbar-brand img {
+    width: 5vw; }
+  .navbar .container-fluid .collapse {
+    margin-left: 4vw; }
+    .navbar .container-fluid .collapse ul {
+      gap: 40px; }
+      .navbar .container-fluid .collapse ul li a {
+        color: white;
+        font-family: garet-normal;
+        font-weight: 600;
+        font-size: 1.5vw;
+        transition: all .4s ease-in-out; }
+        .navbar .container-fluid .collapse ul li a:hover {
+          color: #e74a4a; }
+    .navbar .container-fluid .collapse .dropdown .dropdown-menu {
+      background-color: #19212e; }
+      .navbar .container-fluid .collapse .dropdown .dropdown-menu li a {
+        color: white;
+        font-family: garet-normal;
+        transition: all .4s ease-in-out; }
+        .navbar .container-fluid .collapse .dropdown .dropdown-menu li a:hover {
+          color: black; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+.bannerManuales {
+  background-image: url(../img/bannerProtocolos.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45vw; }
+  .bannerManuales h2 {
+    background: linear-gradient(#9caff0, #811cdf);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: garet-bold;
+    font-size: 4vw;
+    text-align: center; }
+  .bannerManuales p {
+    font-family: garet-normal;
+    font-size: 2vw;
+    color: white;
+    font-weight: 700; }
+
+.categoriasManuales {
+  background-color: #19212e;
+  padding-bottom: 5vw; }
+  .categoriasManuales .categorias {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr); }
+    .categoriasManuales .categorias .categoria {
+      background-color: #111827;
+      color: white;
+      width: 90%;
+      text-align: center;
+      padding-block: 4vw;
+      padding-inline: .7vw;
+      display: flex;
+      flex-direction: column;
+      gap: .5vw;
+      border-radius: 20px;
+      transition: all .4s ease-in-out; }
+      .categoriasManuales .categorias .categoria i {
+        font-size: 4vw;
+        background: linear-gradient(#9caff0, #811cdf);
+        -webkit-background-clip: text;
+        color: transparent; }
+      .categoriasManuales .categorias .categoria h3 {
+        font-family: garet-bold;
+        font-size: 1.9vw; }
+      .categoriasManuales .categorias .categoria p {
+        font-family: garet-normal;
+        font-weight: 700;
+        color: #7c7c7c;
+        font-size: 1.3vw; }
+      .categoriasManuales .categorias .categoria a button {
+        background-color: #2d82f1;
+        border: none;
+        padding: 10px 5px 10px 5px;
+        border-radius: 50px;
+        width: 20vw;
+        height: 3vw;
+        font-family: garet-bold;
+        color: white;
+        font-size: 1.2vw;
+        transition: all .4s ease-in-out; }
+        .categoriasManuales .categorias .categoria a button:hover {
+          background-color: #1919e9; }
+      .categoriasManuales .categorias .categoria:hover {
+        transform: scale(1.07); }
+
+.texto {
+  background-color: #111827;
+  padding: 4vw; }
+  .texto h4 {
+    text-align: center;
+    font-family: garet-bold;
+    font-size: 4vw;
+    margin: 0;
+    background: linear-gradient(#9caff0, #811cdf);
+    -webkit-background-clip: text;
+    color: transparent; }
+    .texto h4 .iconFoot img {
+      width: 10%; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+.flujoDeTrabajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #111827;
+  height: 45vw;
+  padding-left: 2vw; }
+  .flujoDeTrabajo h2 {
+    background: linear-gradient(#9caff0, #811cdf);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: garet-bold;
+    font-size: 4vw; }
+  .flujoDeTrabajo p {
+    font-family: garet-normal;
+    font-size: 1.8vw;
+    font-weight: 700;
+    color: lightgray;
+    width: 80vw; }
+  .flujoDeTrabajo a button {
+    background-color: #2d82f1;
+    border: none;
+    padding: 10px 5px 10px 5px;
+    border-radius: 50px;
+    height: 5vw;
+    width: 40vw;
+    font-family: garet-bold;
+    color: white;
+    font-size: 2vw;
+    transition: all .4s ease-in-out; }
+    .flujoDeTrabajo a button:hover {
+      background-color: #1919e9; }
+
+.mapaFlujoTrabajo {
+  background-color: #19212e;
+  padding-bottom: 4vw; }
+  .mapaFlujoTrabajo .servicios {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr); }
+    .mapaFlujoTrabajo .servicios .servicio {
+      background-color: #111827;
+      padding-block: 2vw;
+      width: 90%;
+      text-align: center;
+      border-radius: 20px;
+      transition: all .3s ease-in-out; }
+      .mapaFlujoTrabajo .servicios .servicio:hover {
+        transform: scale(1.04); }
+      .mapaFlujoTrabajo .servicios .servicio h3 {
+        font-family: garet-bold;
+        background: linear-gradient(#9caff0, #811cdf);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin: 0;
+        font-size: 2.5vw; }
+
+.proyectos {
+  background-color: #111827;
+  padding-bottom: 5vw; }
+  .proyectos .progreso {
+    margin-inline: 5vw;
+    background-color: #19212e;
+    padding: 3vw;
+    border-radius: 20px; }
+    .proyectos .progreso h3 {
+      color: #168fbe;
+      font-family: garet-bold; }
+    .proyectos .progreso p {
+      color: lightgray;
+      font-family: garet-normal; }
+    .proyectos .progreso .progress .progress-bar {
+      font-family: garet-normal; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+.bannerGrafico {
+  background-color: #111827;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vw; }
+  .bannerGrafico h2 {
+    background: linear-gradient(#9caff0, #811cdf);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: garet-bold;
+    text-align: center;
+    font-size: 4vw; }
+  .bannerGrafico p {
+    font-family: garet-normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: white; }
+  .bannerGrafico .iconosGraficos .iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 30vw;
+    gap: 50px;
+    padding: 0; }
+    .bannerGrafico .iconosGraficos .iconos .icono {
+      text-align: center;
+      position: relative;
+      top: 10vw; }
+      .bannerGrafico .iconosGraficos .iconos .icono img {
+        width: 80%;
+        text-align: center;
+        transition: all .3s ease-in-out;
+        position: relative; }
+        .bannerGrafico .iconosGraficos .iconos .icono img:hover {
+          transform: scaleX(1.1); }
+      .bannerGrafico .iconosGraficos .iconos .icono:before {
+        content: "";
+        position: absolute;
+        width: 8vw;
+        height: 2.5vw;
+        top: -3vw;
+        right: -7vw;
+        background-color: whitesmoke;
+        z-index: 2;
+        border-radius: 10px;
+        font-family: garet-normal;
+        font-weight: 700;
+        padding-top: 5px;
+        margin-left: 10px;
+        transform: scale(0);
+        transition: all .3s ease-in-out; }
+      .bannerGrafico .iconosGraficos .iconos .icono:hover:before {
+        transform: scale(1.1); }
+      .bannerGrafico .iconosGraficos .iconos .icono:nth-child(1)::before {
+        content: "Photoshop"; }
+      .bannerGrafico .iconosGraficos .iconos .icono:nth-child(2)::before {
+        content: "Illustrator"; }
+      .bannerGrafico .iconosGraficos .iconos .icono:nth-child(3)::before {
+        content: "Figma"; }
+      .bannerGrafico .iconosGraficos .iconos .icono:nth-child(4)::before {
+        content: "After Effects"; }
+
+.lineamientos {
+  background-color: #19212e;
+  padding-bottom: 6vw; }
+  .lineamientos .descargas {
+    margin-inline: 5vw;
+    background-color: #111827;
+    color: white;
+    padding: 3vw;
+    border-radius: 10px; }
+    .lineamientos .descargas h3 {
+      font-family: garet-bold;
+      font-size: 3vw; }
+      .lineamientos .descargas h3 span img {
+        width: 5%; }
+    .lineamientos .descargas p {
+      font-family: garet-normal;
+      font-size: 1.4vw; }
+    .lineamientos .descargas a button {
+      border: none;
+      width: 30vw;
+      padding: 1vw;
+      background-color: #2d82f1;
+      font-family: garet-bold;
+      color: white;
+      font-size: 1.5vw;
+      transition: all .3s ease-in-out; }
+      .lineamientos .descargas a button:hover {
+        background-color: #1919e9; }
+      .lineamientos .descargas a button i {
+        margin-right: 5px; }
+
+.recursos {
+  background-color: #111827;
+  padding-bottom: 7vw; }
+  .recursos .archivos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr); }
+    .recursos .archivos .archivo {
+      width: 90%;
+      background-color: #19212e; }
+      .recursos .archivos .archivo .textArchivo {
+        background-color: #19212e;
+        padding: 1vw 1vw 1vw 1vw;
+        height: 10vw; }
+        .recursos .archivos .archivo .textArchivo h3 {
+          color: white;
+          font-family: garet-bold;
+          font-size: 1.9vw; }
+        .recursos .archivos .archivo .textArchivo ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0;
+          padding-inline: 1vw;
+          position: relative;
+          top: 3vw; }
+          .recursos .archivos .archivo .textArchivo ul li:first-child a {
+            color: #2d82f1; }
+          .recursos .archivos .archivo .textArchivo ul li a {
+            text-decoration: none;
+            color: #039b03; }
+
+.preguntasDiseno {
+  background-color: #19212e;
+  padding-bottom: 5vw; }
+  .preguntasDiseno .accordion {
+    padding-inline: 5vw; }
+    .preguntasDiseno .accordion .accordion-item .accordion-header .accordion-button {
+      background-color: #2d82f1;
+      font-family: garet-bold;
+      color: white;
+      font-size: 2vw; }
+    .preguntasDiseno .accordion .accordion-item .accordion-collapse div {
+      font-family: garet-normal;
+      font-weight: 700;
+      font-size: 1.2vw; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+.bannerSoftware {
+  background-color: #111827;
+  height: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .bannerSoftware h2 {
+    font-family: garet-bold;
+    background: linear-gradient(#9caff0, #811cdf);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4.5vw; }
+  .bannerSoftware p {
+    font-family: garet-normal;
+    color: white;
+    font-weight: 700;
+    font-size: 2vw; }
+
+.introduccion {
+  background-color: #19212e;
+  padding-block: 4vw; }
+  .introduccion .row .col-md-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .introduccion .row .col-md-5 h3 {
+      font-family: garet-bold;
+      background: linear-gradient(#9caff0, #811cdf);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 3.5vw;
+      text-align: left; }
+    .introduccion .row .col-md-5 p {
+      font-family: garet-normal;
+      font-weight: 700;
+      color: white;
+      font-size: 1.4vw;
+      text-align: left; }
+  .introduccion .row .col-md-7 img {
+    width: 100%;
+    border-radius: 5px;
+    transition: all .3s ease-in-out; }
+    .introduccion .row .col-md-7 img:hover {
+      box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+      transform: scale(0.99); }
+
+.aplicaciones {
+  background-color: #111827;
+  padding-bottom: 5vw; }
+  .aplicaciones .cardsApps {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-inline: 30px; }
+    .aplicaciones .cardsApps .card {
+      width: 95%;
+      padding: 1vw 0 1vw 2vw;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: #19212e;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .3s ease-in-out; }
+      .aplicaciones .cardsApps .card:hover {
+        box-shadow: rgba(46, 179, 240, 0.178) 0px 5px, rgba(46, 114, 240, 0.3) 0px 10px, rgba(46, 153, 240, 0.2) 0px 15px, rgba(46, 137, 240, 0.1) 0px 20px, rgba(46, 75, 240, 0.05) 0px 25px, rgba(46, 179, 240, 0.178) -5px 5px, rgba(46, 114, 240, 0.3) -10px 10px, rgba(46, 153, 240, 0.2) -15px 15px, rgba(46, 137, 240, 0.1) -20px 20px, rgba(46, 75, 240, 0.05) -25px 25px, rgba(46, 179, 240, 0.178) 5px 5px, rgba(46, 114, 240, 0.3) 10px 10px, rgba(46, 153, 240, 0.2) 15px 15px, rgba(46, 137, 240, 0.1) 20px 20px, rgba(46, 75, 240, 0.05) 25px 25px;
+        transform: translateY(-10px); }
+      .aplicaciones .cardsApps .card h4 {
+        font-family: garet-bold;
+        color: #8a96ff; }
+      .aplicaciones .cardsApps .card ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; }
+        .aplicaciones .cardsApps .card ul li::marker {
+          color: #b132b6; }
+        .aplicaciones .cardsApps .card ul li {
+          color: white;
+          font-family: garet-normal;
+          font-weight: 700;
+          font-size: 1.2vw; }
+
+.accesos {
+  background-color: #19212e;
+  padding-bottom: 5vw; }
+  .accesos .accesosDirectos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding-inline: 2vw; }
+    .accesos .accesosDirectos .links {
+      background-color: #182b4b;
+      width: 95%;
+      text-align: center;
+      padding: 2vw;
+      height: 10vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      transition: all .3s ease-in-out; }
+      .accesos .accesosDirectos .links:hover {
+        background-color: #2d82f1; }
+      .accesos .accesosDirectos .links a {
+        text-decoration: none;
+        color: white;
+        font-family: garet-bold;
+        font-size: 1.5vw; }
+
+.preguntas {
+  background-color: #111827;
+  padding-bottom: 5vw; }
+  .preguntas .accordion {
+    margin-inline: 10vw; }
+    .preguntas .accordion .accordion-item .accordion-header {
+      font-family: garet-bold; }
+      .preguntas .accordion .accordion-item .accordion-header .accordion-button {
+        background-color: #111827;
+        color: white; }
+    .preguntas .accordion .accordion-item .accordion-collapse .accordion-body {
+      background-color: #111827;
+      font-family: garet-normal;
+      font-weight: 700;
+      font-size: 1.2vw;
+      color: white; }
+
+.contacto {
+  background-color: #19212e;
+  padding-bottom: 5vw;
+  text-align: center; }
+  .contacto .botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; }
+    .contacto .botones .boton1 {
+      background-color: #2d82f1;
+      border: none;
+      padding: 1.5vw 3vw 1.5vw 3vw;
+      transition: all .3s ease-in-out; }
+      .contacto .botones .boton1:hover {
+        background-color: #1919e9; }
+    .contacto .botones .boton2 {
+      background-color: #b132b6;
+      border: none;
+      padding: 1.5vw 3vw 1.5vw 3vw;
+      transition: all .3s ease-in-out; }
+      .contacto .botones .boton2:hover {
+        background-color: #78287a; }
+    .contacto .botones .boton1, .contacto .botones .boton2 {
+      border-radius: 10px;
+      color: white;
+      font-family: garet-bold;
+      font-size: 1.2vw; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+.bannerProyectos {
+  background-image: url(../img/bannerProyectos.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vw; }
+  .bannerProyectos h2 {
+    color: white;
+    font-family: garet-bold;
+    font-size: 4vw; }
+  .bannerProyectos p {
+    font-family: garet-normal;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 700; }
+
+.resumenGeneral {
+  background-color: #111827;
+  padding-block: 5vw; }
+  .resumenGeneral h2 {
+    text-align: center;
+    color: white;
+    font-family: garet-bold;
+    font-size: 2.9vw; }
+  .resumenGeneral .resumen {
+    padding-top: 2.3vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    text-align: center; }
+    .resumenGeneral .resumen .seccionResumen {
+      background-color: #182b4b;
+      padding: 1vw 1vw 3vw 1.3vw;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+      .resumenGeneral .resumen .seccionResumen ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        list-style-type: none; }
+        .resumenGeneral .resumen .seccionResumen ul li {
+          font-size: 2.5vw;
+          font-family: garet-bold;
+          background: linear-gradient(#9caff0, #811cdf);
+          -webkit-background-clip: text;
+          color: transparent; }
+      .resumenGeneral .resumen .seccionResumen h3 {
+        font-family: garet-bold;
+        font-size: 1.9vw; }
+
+.listado {
+  background-color: #19212e;
+  padding-block: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .listado h2 {
+    text-align: center;
+    color: white;
+    font-family: garet-bold;
+    font-size: 2.9vw; }
+  .listado .rwd-table {
+    margin: 4vw 0;
+    width: 80%; }
+    .listado .rwd-table .trHead {
+      background-color: #182b4b; }
+      .listado .rwd-table .trHead th {
+        color: #dd5;
+        font-family: garet-bold; }
+    .listado .rwd-table .trBody {
+      background-color: #111827; }
+      .listado .rwd-table .trBody td {
+        color: garet-normal;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: white; }
+      .listado .rwd-table .trBody .estado p {
+        margin: 0;
+        background-color: #11be11;
+        text-align: center;
+        border-radius: 50px; }
+    .listado .rwd-table th {
+      display: none; }
+    .listado .rwd-table td {
+      display: block; }
+      .listado .rwd-table td:first-child {
+        padding-top: .5em; }
+      .listado .rwd-table td:last-child {
+        padding-bottom: .5em; }
+      .listado .rwd-table td:before {
+        content: attr(data-th) ": ";
+        font-weight: bold;
+        width: 6.5em;
+        display: inline-block; }
+        @media (min-width: 480px) {
+          .listado .rwd-table td:before {
+            display: none; } }
+    .listado .rwd-table th,
+    .listado .rwd-table td {
+      text-align: left; }
+      @media (min-width: 480px) {
+        .listado .rwd-table th,
+        .listado .rwd-table td {
+          display: table-cell;
+          padding: .25em .5em; }
+          .listado .rwd-table th:first-child,
+          .listado .rwd-table td:first-child {
+            padding-left: 0; }
+          .listado .rwd-table th:last-child,
+          .listado .rwd-table td:last-child {
+            padding-right: 0; } }
+  .listado .rwd-table tr {
+    border-color: #46637f; }
+  .listado .rwd-table th,
+  .listado .rwd-table td {
+    margin: .5em 1em; }
+    @media (min-width: 480px) {
+      .listado .rwd-table th,
+      .listado .rwd-table td {
+        padding: 1em !important; } }
+  .listado .rwd-table th,
+  .listado .rwd-table td:before {
+    color: #dd5; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+.bannerSoporte {
+  background-color: black;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .bannerSoporte h2 {
+    background: linear-gradient(#9caff0, #811cdf);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: garet-bold;
+    font-size: 4vw; }
+  .bannerSoporte p {
+    color: white;
+    font-weight: 700;
+    font-family: garet-normal;
+    font-size: 1.5vw; }
+
+.categoriaSoporte {
+  background-color: black;
+  text-align: center; }
+  .categoriaSoporte h2 {
+    font-family: garet-bold;
+    color: white;
+    font-size: 3.4vw; }
+  .categoriaSoporte p.textHeader {
+    font-family: garet-normal;
+    font-weight: 700;
+    font-size: 1.3vw;
+    color: #cbd0dd; }
+  .categoriaSoporte .cardsCategorias {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 6vw;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-inline: 2vw; }
+    .categoriaSoporte .cardsCategorias .card {
+      width: 100%;
+      height: 15vw;
+      border: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      position: relative;
+      transition: all .3s ease-in-out; }
+      .categoriaSoporte .cardsCategorias .card:nth-child(1) {
+        background: linear-gradient(151deg, #4d4991 0%, #404098 55%, #7fdcee 100%); }
+      .categoriaSoporte .cardsCategorias .card:nth-child(2) {
+        background: linear-gradient(151deg, #844991 0%, #7f4098 55%, #b57fee 100%); }
+      .categoriaSoporte .cardsCategorias .card:nth-child(3) {
+        background: linear-gradient(151deg, #504991 0%, #406198 55%, #7fe8ee 100%); }
+      .categoriaSoporte .cardsCategorias .card:nth-child(4) {
+        background: linear-gradient(151deg, #dfa612 0%, #d68426 55%, #eee97f 100%); }
+      .categoriaSoporte .cardsCategorias .card:nth-child(5) {
+        background: linear-gradient(151deg, #5bdf12 0%, #7be35e 55%, #a8ee7f 100%); }
+      .categoriaSoporte .cardsCategorias .card:nth-child(6) {
+        background: linear-gradient(151deg, #dfdd12 0%, #d9e35e 55%, #e4ee7f 100%); }
+      .categoriaSoporte .cardsCategorias .card:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.76);
+        transition: all .3s ease-in-out; }
+      .categoriaSoporte .cardsCategorias .card:hover:before {
+        background-color: rgba(0, 0, 0, 0.363); }
+      .categoriaSoporte .cardsCategorias .card .icon {
+        font-size: 3vw;
+        background-color: rgba(0, 0, 0, 0.411);
+        width: 20%;
+        height: 5.8vw;
+        border-radius: 50px;
+        border: solid 3px #202072;
+        z-index: 2; }
+        .categoriaSoporte .cardsCategorias .card .icon i {
+          position: relative;
+          top: 10px;
+          color: white; }
+      .categoriaSoporte .cardsCategorias .card h3 {
+        font-family: garet-bold;
+        color: white;
+        margin: 0;
+        margin-top: 15px;
+        z-index: 2; }
+      .categoriaSoporte .cardsCategorias .card p {
+        font-family: garet-normal;
+        font-weight: 700;
+        font-size: 1vw;
+        z-index: 2;
+        color: #cbd0dd; }
+
+.formulario {
+  background-color: black;
+  padding-block: 14vw; }
+  .formulario .form {
+    border: solid 1px;
+    margin-inline: 18vw;
+    padding-block: 5vw;
+    border-radius: 30px; }
+    .formulario .form h3 {
+      text-align: center;
+      font-family: garet-bold;
+      color: white;
+      font-size: 2.5vw; }
+    .formulario .form p {
+      text-align: center;
+      font-family: garet-normal;
+      font-weight: 700;
+      color: #cbd0dd; }
+    .formulario .form .inputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding-inline: 3vw;
+      color: #cbd0dd;
+      font-family: garet-normal;
+      font-weight: 700; }
+      .formulario .form .inputs .categoria {
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        font-weight: 700;
+        font-size: 1vw;
+        padding: .5vw;
+        border: solid 1px #7a52f4;
+        border-radius: 5px;
+        margin-bottom: 40px; }
+        .formulario .form .inputs .categoria option {
+          background-color: black; }
+      .formulario .form .inputs textarea {
+        width: 100%;
+        height: 15vw;
+        padding: .5vw;
+        font-weight: 700;
+        background-color: transparent;
+        border: solid 1px #7a52f4;
+        border-radius: 5px;
+        color: white; }
+      .formulario .form .inputs sub {
+        margin-top: 10px;
+        margin-bottom: 40px; }
+      .formulario .form .inputs .input2 {
+        margin-bottom: 40px; }
+        .formulario .form .inputs .input2 .prioridad {
+          margin-right: 10vw;
+          width: 20vw; }
+        .formulario .form .inputs .input2 .ubi {
+          width: 20vw; }
+        .formulario .form .inputs .input2 input,
+        .formulario .form .inputs .input2 select {
+          padding: .5vw;
+          background-color: transparent;
+          border: solid 1px #7a52f4;
+          border-radius: 5px;
+          color: white; }
+        .formulario .form .inputs .input2 select option {
+          background-color: black; }
+      .formulario .form .inputs .upload-box {
+        text-align: center;
+        border: 2px dashed #7a52f4;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        color: white;
+        background: #111;
+        margin-bottom: 40px; }
+      .formulario .form .inputs .upload-label {
+        cursor: pointer;
+        display: block;
+        padding: 10px; }
+      .formulario .form .inputs .click {
+        color: #7a52f4;
+        cursor: pointer; }
+      .formulario .form .inputs .formats {
+        font-size: 12px;
+        color: gray; }
+      .formulario .form .inputs .submit {
+        width: 100%;
+        background: #1136bb;
+        background: linear-gradient(93deg, #1136bb 0%, #7354b6 55%, #657ebd 100%);
+        color: white;
+        font-family: garet-bold;
+        font-size: 1.3vw;
+        padding-block: .5vw;
+        border: none;
+        border-radius: 5px; }
+
+.tickets {
+  background-color: black; }
+  .tickets .seguimiento {
+    border: solid 1px #7a52f4;
+    padding-block: 5vw;
+    margin-inline: 2vw;
+    border-radius: 20px; }
+    .tickets .seguimiento h2 {
+      text-align: center;
+      font-family: garet-bold;
+      color: white;
+      font-size: 2.9vw; }
+    .tickets .seguimiento p {
+      text-align: center;
+      font-family: garet-normal;
+      color: #cbd0dd;
+      font-size: 1.5vw; }
+    .tickets .seguimiento table {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-block: 5vw; }
+      .tickets .seguimiento table .trHead {
+        background-color: #111827;
+        color: #cbd0dd; }
+        .tickets .seguimiento table .trHead th {
+          font-family: garet-bold;
+          font-size: 1.6vw;
+          padding-inline: 3vw;
+          padding-block: 1vw;
+          border-bottom: solid 1px white; }
+      .tickets .seguimiento table .trBody {
+        text-align: center;
+        border: solid 1px #7a52f4;
+        border-radius: 0 0 10px 10px; }
+        .tickets .seguimiento table .trBody td {
+          padding-block: 1vw;
+          padding-left: 2vw;
+          font-family: garet-normal;
+          font-weight: 700;
+          color: white;
+          border-top: solid 1px #7a52f4; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+.sugerencias {
+  background-image: url(../img/bannerSugerencias.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .sugerencias h2 {
+    font-family: garet-bold;
+    font-size: 5.5vw;
+    color: white; }
+  .sugerencias p {
+    font-family: garet-normal;
+    font-size: 2vw;
+    font-weight: 700;
+    color: #cbd0dd; }
+  .sugerencias .formularioSugerencias {
+    margin-top: 10vw; }
+    .sugerencias .formularioSugerencias button {
+      border: solid 3px #7a52f4;
+      width: 25vw;
+      border-radius: 30px 0 30px 0;
+      height: 6vw;
+      background: #4d4991;
+      background: linear-gradient(137deg, #4d4991 0%, #555598 35%, #1e8ba1 100%);
+      color: white;
+      font-family: garet-bold;
+      font-size: 2vw; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+.bannerNovedades {
+  background-color: black;
+  height: 70vw;
+  padding-top: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .bannerNovedades h2 {
+    font-family: garet-bold;
+    font-size: 4vw;
+    color: white; }
+  .bannerNovedades p {
+    font-family: garet-normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: white; }
+  .bannerNovedades .lanzamientos {
+    margin-top: 5vw;
+    background-color: #7b52f436;
+    border: solid 1px #7b52f4;
+    padding: 8vw 2vw 8vw 2vw;
+    width: 70%;
+    border-radius: 40px;
+    text-align: center; }
+    .bannerNovedades .lanzamientos h3 {
+      font-family: garet-bold;
+      font-size: 3vw;
+      color: white; }
+    .bannerNovedades .lanzamientos p {
+      font-size: 1.2vw;
+      color: #cbd0dd; }
+    .bannerNovedades .lanzamientos button {
+      margin-top: 2vw;
+      padding: 1vw;
+      width: 15vw;
+      border: none;
+      border-radius: 30px;
+      background-color: #7b52f4;
+      color: white;
+      font-family: garet-bold;
+      font-size: 1.7vw; }
+
+.noticiasDestacadas {
+  background-color: black;
+  padding-bottom: 9vw; }
+  .noticiasDestacadas h2 {
+    font-family: garet-bold;
+    color: white;
+    margin-left: 4vw;
+    font-size: 3vw; }
+  .noticiasDestacadas .carousel {
+    margin-inline: 4vw;
+    padding-bottom: 4vw; }
+    .noticiasDestacadas .carousel .carousel-inner .carousel-item img {
+      border-radius: 40px; }
+    .noticiasDestacadas .carousel .carousel-control-prev .carousel-control-prev-icon {
+      background-color: #111827;
+      width: 4vw;
+      height: 4vw;
+      border-radius: 50px; }
+    .noticiasDestacadas .carousel .carousel-control-next .carousel-control-next-icon {
+      background-color: #111827;
+      width: 4vw;
+      height: 4vw;
+      border-radius: 50px; }
+
+.anuncios {
+  background-color: black; }
+  .anuncios h2 {
+    font-family: garet-bold;
+    color: white;
+    margin-left: 4vw;
+    font-size: 3vw; }
+  .anuncios .cardsAnuncios {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline: 4vw;
+    padding-top: 2vw; }
+    .anuncios .cardsAnuncios .card {
+      padding: 1.3vw;
+      border: solid 1px #7b52f4;
+      background-color: transparent; }
+      .anuncios .cardsAnuncios .card h4 {
+        font-family: garet-bold;
+        color: white; }
+      .anuncios .cardsAnuncios .card p {
+        font-family: garet-normal;
+        font-weight: 700;
+        color: #cbd0dd; }
+      .anuncios .cardsAnuncios .card a button {
+        background-color: transparent;
+        border: none;
+        color: #cbd0dd;
+        font-family: garet-normal;
+        font-weight: 700; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+#toolbar {
+  display: none !important; }
+
+a.buttons button {
+  background-color: #2d82f1;
+  border: none;
+  padding: 10px 5px 10px 5px;
+  border-radius: 50px;
+  width: 25vw;
+  height: 5vw;
+  font-family: garet-bold;
+  color: white;
+  font-size: 1.5vw;
+  transition: all .4s ease-in-out;
+  margin-top: 3vw; }
+  a.buttons button:hover {
+    background-color: #1919e9; }
+
+.title {
+  margin-bottom: 7vw;
+  padding-top: 7vw;
+  text-align: center;
+  font-family: garet-bold;
+  color: white;
+  font-size: 4vw;
+  text-shadow: 3px 2px 1px gray; }
+  .title .iconTitle {
+    margin-right: 3vw; }
+    .title .iconTitle img {
+      width: 8%; }
+
+/*# sourceMappingURL=style.css.map */

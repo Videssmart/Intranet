@@ -1,0 +1,200 @@
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+$colorLetra: rgb(255, 255, 255);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+$fondoBoton: rgb(45, 130, 241);
+$fondoBotonHover: rgb(25, 25, 233);
+$fondoPagina: #111827;
+$fondoPagina2: #19212e;
+$colorExtras: #182b4b;
+ 
+.bannerInicio{
+    background-image: url(../img/bannerIntranet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $colorLetra;
+    h2{
+        font-family: $fuenteBold;
+        font-size: 3.5vw;
+        background: linear-gradient(rgb(156, 175, 240),rgb(129, 28, 223));
+        -webkit-background-clip: text;
+        color: transparent;  
+    }
+    p{
+        font-family: $fuenteNormal;
+        font-size: 2vw;
+    }
+   
+}
+
+
+.documentosRecientes{
+    background-color: $fondoPagina;
+    padding-block: 5vw;
+    text-align: center;
+    padding-inline: 2vw;
+
+    .documentos{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        text-align: center;
+        .archivo{
+            width: 100%;
+            p{
+                background-color: $fondoPagina2;
+                color: $colorLetra;
+                font-family: $fuenteNormal;
+                font-weight: 700;
+                font-size: 1.5vw;
+                margin: 0;
+                padding-block: 1.5vw;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+    }
+}
+
+.moduloProductividad{
+    background-color: $fondoPagina2;
+
+    .modulos{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        .modulosKpis{
+            color: $colorLetra;
+            background-color: $fondoPagina;
+            width: 90%;
+            padding: 40px 0 10px 0;
+            border-radius: 20px;
+            margin-bottom: 8vw;
+
+            .iconModulo{
+                font-size: 3vw;
+                i{
+                    background: linear-gradient(rgb(156, 175, 240),rgb(129, 28, 223));
+                    -webkit-background-clip: text;
+                    color: transparent;  
+                }
+                h3{
+                    font-size: 2.2vw;
+                    font-family: $fuenteBold;
+                }
+            }
+            .modulosLista{
+                list-style-type: none;
+                font-family: $fuenteNormal;
+                font-size: 1.2vw;
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+.novedades{
+    background-color: $fondoPagina;
+    h2{
+        margin: 0;
+    }
+    .card{
+        width: 100%;
+        background-color: $fondoPagina;
+        border: none;
+        margin-top: 4vw;
+        padding-bottom: 4vw;
+        .card-header{
+            img{
+                width: 100%;
+                border-radius: 30px;
+            }
+        }
+        .card-body{
+            margin-left: 2vw;
+            color: $colorLetra;
+            h5{
+                font-family: $fuenteBold;
+                font-size: 4vw;
+            }
+            p{
+                font-family: $fuenteNormal;
+                font-size: 1.5vw;
+            }
+            a{
+                font-family: $fuenteBold;
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+
+.soporte{
+    background-color: $fondoPagina2;
+    .container{
+        .row{
+            .col{
+                .accordion{
+                    .accordion-item{
+                        .accordion-header{
+                            .accordion-button{
+                                background-color: $colorExtras;
+                                color: $colorLetra;
+                                &:after{
+                                    color: $colorLetra;
+                                }
+                            }
+                        }
+                        .accordion-collapse{
+                            background-color: $fondoPagina;
+                            color: $colorLetra;
+                        }
+                    }
+                }
+                .mb-3{
+                    position: relative;
+                    bottom: 2vw;
+                    label{
+                        color: $colorLetra;
+                        font-family: $fuenteBold;
+                        font-size: 3vw;
+                    }
+                    .form-control{
+                        height: 20vw;
+                        background-color: rgb(20, 24, 37);
+                        color: $colorLetra;
+                        font-family: $fuenteNormal;
+                        font-weight: 700;
+                    }
+                    button{
+                        margin-top: 2vw;
+                        width: 90%;
+                        font-family: $fuenteBold;
+                        font-size: 1.3vw;
+                        i{
+                            margin-right: 1vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

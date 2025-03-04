@@ -1,0 +1,57 @@
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+$colorLetra: rgb(255, 255, 255);
+$colorLetra2: rgb(0, 0, 0);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+$colorLetraHover: rgb(231, 74, 74);
+$fondoPagina2: #19212e;
+.navbar{
+    position: absolute !important; 
+    .container-fluid{
+        .navbar-brand{
+                img{
+                    width: 5vw;
+                }
+        }
+        .collapse{
+            margin-left: 4vw;
+            ul{
+                gap: 40px;
+                li{
+                    a{
+                        color: $colorLetra;
+                        font-family: $fuenteNormal;
+                        font-weight: 600;
+                        font-size: 1.5vw;
+                        transition: all .4s ease-in-out;
+                        &:hover{
+                            color: $colorLetraHover;
+                        }
+                    }
+                }
+            }
+            .dropdown{
+                .dropdown-menu{
+                    background-color: $fondoPagina2;
+                    li{
+                        a{
+                            color: $colorLetra;
+                            font-family: $fuenteNormal;
+                            transition: all .4s ease-in-out;
+                            &:hover{
+                                color: $colorLetra2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
