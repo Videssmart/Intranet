@@ -57,6 +57,9 @@ $archivos = array_slice($archivos, 0, 3);
                 <li>
                     <p>Captación: <strong>Q850.00</strong></p>
                 </li>
+                <li>
+                    <p>Ganancia: <strong>Q-345.45</strong></p>
+                </li>
             </ul>
         </div>
         <div class="modulosKpis">
@@ -65,13 +68,16 @@ $archivos = array_slice($archivos, 0, 3);
             </span>
             <ul class="modulosLista">
                 <li>
-                    <p>Negocios cerrados: --</p>
+                    <p>Negocios cerrados:  <strong>--</strong></p>
                 </li>
                 <li>
-                    <p>Satisfacción del cliente: --</p>
+                    <p>Satisfacción del cliente:  <strong>--</strong></p>
                 </li>
                 <li>
-                    <p>Captación: --</p>
+                    <p>Captación:  <strong>--</strong></p>
+                </li>
+                <li>
+                    <p>Ganancia: <strong>--</strong></p>
                 </li>
             </ul>
         </div>
