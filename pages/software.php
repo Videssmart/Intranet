@@ -1,3 +1,46 @@
+<?php
+$softwares = [
+    [
+        "categoria" => "Redes Sociales y Marketing",
+        "programas" => [
+            ["prog" => "Meta Suite Business"]
+        ]
+    ],
+    [
+        "categoria" => "Gestión y Comunicación Interna",
+        "programas" => [
+            ["prog" => "Correo Corporativo"],
+            ["prog" => "Microsoft Teams / Google Meet"],
+            ["prog" => "Notion"],
+            ["prog" => "Whatsapp"],
+        ]
+    ],
+    [
+        "categoria" => "CRM y Atención al Cliente",
+        "programas" => [
+            ["prog" => "Meta Suite Business"],
+            ["prog" => "Intranet Smart"]
+        ]
+    ],
+    [
+        "categoria" => "Finanzas",
+        "programas" => [
+            ["prog" => "Paypal"],
+            ["prog" => "Cuenta Bancaria"],
+            ["prog" => "Excel"]
+
+        ]
+    ],
+    [
+        "categoria" => "Diseño y Desarrollo",
+        "programas" => [
+            ["prog" => "Adobe Suite"],
+            ["prog" => "Canva Pro"],
+            ["prog" => "After Effects"]
+        ]
+    ]
+]
+?>
 <div class="bannerSoftware">
     <h2>Centro de Software y Aplicaciones</h2>
     <p>Todo lo que necesitas para ser eficaz.</p>
@@ -20,82 +63,16 @@
 <div class="aplicaciones">
     <h2 class="title" id="documentosApoyo"><span class="iconTitle"><img src="assets/img/softwares.png" alt=""></span>Softwares de Trabajo</h2>
     <div class="cardsApps">
-        <div class="card">
-            <h4>Redes Sociales y Marketing</h4>
-            <ul class="cardList">
-                <li>Facebook Business Suite</li>
-                <li>Instagram Business</li>
-                <li>LinkedIn Ads</li>
-                <li>Hootsuite / Metricool</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h4>Redes Sociales y Marketing</h4>
-            <ul class="cardList">
-                <li>Facebook Business Suite</li>
-                <li>Instagram Business</li>
-                <li>LinkedIn Ads</li>
-                <li>Hootsuite / Metricool</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h4>Redes Sociales y Marketing</h4>
-            <ul class="cardList">
-                <li>Facebook Business Suite</li>
-                <li>Instagram Business</li>
-                <li>LinkedIn Ads</li>
-                <li>Hootsuite / Metricool</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h4>Redes Sociales y Marketing</h4>
-            <ul class="cardList">
-                <li>Facebook Business Suite</li>
-                <li>Instagram Business</li>
-                <li>LinkedIn Ads</li>
-                <li>Hootsuite / Metricool</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h4>Redes Sociales y Marketing</h4>
-            <ul class="cardList">
-                <li>Facebook Business Suite</li>
-                <li>Instagram Business</li>
-                <li>LinkedIn Ads</li>
-                <li>Hootsuite / Metricool</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-<div class="accesos">
-    <h2 class="title" id="documentosApoyo"><span class="iconTitle"><img src="assets/img/links.png" alt=""></span>Accesos Directos</h2>
-    <div class="accesosDirectos">
-        <div class="links">
-            <a href="">Correo Corporativo</a>
-        </div>
-        <div class="links">
-            <a href="">Correo Corporativo</a>
-        </div>
-        <div class="links">
-            <a href="">Correo Corporativo</a>
-        </div>
-        <div class="links">
-            <a href="">Correo Corporativo</a>
-        </div>
-        <div class="links">
-            <a href="">Correo Corporativo</a>
-        </div>
-        <div class="links">
-            <a href="">Correo Corporativo</a>
-        </div>
-        <div class="links">
-            <a href="">Correo Corporativo</a>
-        </div>
-        <div class="links">
-            <a href="">Correo Corporativo</a>
-        </div>
+        <?php foreach ($softwares as $software): ?>
+            <div class="card">
+                <h4><?php echo $software["categoria"] ?></h4>
+                <ul class="cardList">
+                    <?php foreach ($software["programas"] as $programa): ?>
+                        <li><?php echo $programa["prog"] ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        <?php endforeach; ?>
     </div>
 </div>
 

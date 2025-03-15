@@ -25,7 +25,7 @@ $proyectos = [
         "fechaEntrega" => "00/00/0000",
         "fechaPago" => "14",
         "estado" => "Activo",
-        "pago" => "Q472.50"
+        "pago" => "Q232.50"
     ],
     [
         "nombreProyecto" => "Manejo de Redes",
@@ -34,7 +34,7 @@ $proyectos = [
         "fechaEntrega" => "00/00/0000",
         "fechaPago" => "30",
         "estado" => "Activo",
-        "pago" => "Q650"
+        "pago" => "Q650.00"
     ]
 ]
 ?>
@@ -48,37 +48,37 @@ $proyectos = [
     <div class="resumen">
         <div class="seccionResumen">
             <ul class="iconos">
-                <li>.</li>
-                <li>12</li>
+                <li><i class="fi fi-ss-trophy"></i></li>
+                <li>0</li>
             </ul>
-            <h3>Proyectos en curso</h3>
+            <h3>En curso</h3>
         </div>
         <div class="seccionResumen">
             <ul class="iconos">
-                <li>.</li>
-                <li>12</li>
+                <li><i class="fi fi-rr-rotate-right"></i></li>
+                <li>0</li>
             </ul>
-            <h3>Proyectos en curso</h3>
+            <h3>En revisión</h3>
         </div>
         <div class="seccionResumen">
             <ul class="iconos">
-                <li>.</li>
-                <li>12</li>
+                <li><i class="fi fi-ss-rocket-lunch"></i></li>
+                <li>0</li>
             </ul>
-            <h3>Proyectos en curso</h3>
+            <h3>Completados</h3>
         </div>
         <div class="seccionResumen">
             <ul class="iconos">
-                <li></li>
-                <li>12</li>
+                <li><i class="fi fi-ss-triangle-warning"></i></li>
+                <li>0</li>
             </ul>
-            <h3>Proyectos en curso</h3>
+            <h3>Fuera de Tiempo</h3>
         </div>
     </div>
 </div>
 
 <div class="listado">
-    <h2>Listado de Proyectos</h2>
+    <h2>Listado de Planes Mensuales</h2>
     <table class="rwd-table">
         <tr class="trHead">
             <th>NOMBRE DEL PROYECTO</th>

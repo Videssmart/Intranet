@@ -159,41 +159,6 @@ $colorTitulo: rgb(138, 150, 255);
     }
 }
 
-.accesos{
-    background-color: $fondoPagina2;
-    padding-bottom: 5vw;
-    .accesosDirectos{
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
-        padding-inline: 2vw;
-        .links{
-            background-color: $colorExtras;
-            width: 95%;
-            text-align: center;
-            padding: 2vw;
-            height: 10vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            transition: all .3s ease-in-out;
-            &:hover{
-                background-color: $fondoBoton;
-            }
-            a{
-                text-decoration: none;
-                color: $colorLetra;
-                font-family: $fuenteBold;
-                font-size: 1.5vw;
-            }
-        }
-    }
-}
-
-
 .preguntas{
     background-color: $fondoPagina;
     padding-bottom: 5vw;

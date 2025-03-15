@@ -13,29 +13,29 @@
             <p>Problemas con equipos, software, accesos</p>
         </div>
         <div class="card">
-            <span class="icon"><i class="fi fi-bs-computer"></i></span>
-            <h3>Soporte Técnico</h3>
-            <p>Problemas con equipos, software, accesos</p>
+            <span class="icon"><i class="fi fi-ss-email-pending"></i></span>
+            <h3>Correos y Comunicación</h3>
+            <p>Cuentas de correo, firmas, errores en emails</p>
         </div>
         <div class="card">
-            <span class="icon"><i class="fi fi-bs-computer"></i></span>
-            <h3>Soporte Técnico</h3>
-            <p>Problemas con equipos, software, accesos</p>
+            <span class="icon"><i class="fi fi-ss-tools"></i></span>
+            <h3>Herramientas y Software</h3>
+            <p>CRM, ERP, Aplicaciones empresariales</p>
         </div>
         <div class="card">
-            <span class="icon"><i class="fi fi-bs-computer"></i></span>
-            <h3>Soporte Técnico</h3>
-            <p>Problemas con equipos, software, accesos</p>
+            <span class="icon"><i class="fi fi-ss-lock"></i></span>
+            <h3>Accesos y Seguridad</h3>
+            <p>Recuperación de contraseñas, permisos especiales</p>
         </div>
         <div class="card">
-            <span class="icon"><i class="fi fi-bs-computer"></i></span>
-            <h3>Soporte Técnico</h3>
-            <p>Problemas con equipos, software, accesos</p>
+            <span class="icon"><i class="fi fi-ss-user"></i></span>
+            <h3>Recursos Humanos</h3>
+            <p>Consultas de nómina, beneficios, permisos</p>
         </div>
         <div class="card">
-            <span class="icon"><i class="fi fi-bs-computer"></i></span>
-            <h3>Soporte Técnico</h3>
-            <p>Problemas con equipos, software, accesos</p>
+            <span class="icon"><i class="fi fi-ss-city"></i></span>
+            <h3>Infraestructura General</h3>
+            <p>Internet, equipos, espacio de trabajo</p>
         </div>
     </div>
 </div>
@@ -99,11 +99,11 @@
             </tr>
             <tr class="trBody">
                 <td data-th="col1">VIS-0</td>
-                <td data-th="col2">No puedo acceder a mi correo electrónico</td>
-                <td data-th="col3">Correos y Comunicaciones</td>
-                <td data-th="col4">Alta</td>
-                <td data-th="col5">En Progreso</td>
-                <td data-th="col6">27/02/2025</td>
+                <td data-th="col2">----------</td>
+                <td data-th="col3">----------</td>
+                <td data-th="col4">----------</td>
+                <td data-th="col5">----------</td>
+                <td data-th="col6">----------</td>
             </tr>
         </table>
     </div>

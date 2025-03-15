@@ -1,7 +1,37 @@
+<?php
+
+$recursos = [
+    [
+        "documento" => "uploads/DG1.pdf#toolbar=0",
+        "nombreDoc" => "Diseño Web",
+        "download" => "uploads/DG1.pdf",
+        "descarga" => "DG1.pdf",
+        "vistaPrevia" => "uploads/DG1.pdf"
+    ],
+    [
+        "documento" => "uploads/DG2.pdf#toolbar=0",
+        "nombreDoc" => "Planes de Redes Sociales",
+        "download" => "uploads/DG2.pdf",
+        "descarga" => "DG2.pdf",
+        "vistaPrevia" => "uploads/DG2.pdf"
+    ],
+    [
+        "documento" => "uploads/DG3.pdf#toolbar=0",
+        "nombreDoc" => "Portafolio de Diseños",
+        "download" => "uploads/DG3.pdf",
+        "descarga" => "DG3.pdf",
+        "vistaPrevia" => "uploads/DG3.pdf"
+    ]
+
+]
+
+?>
+
+
 <div class="bannerGrafico">
     <h2>Centro de Artes Gráficas: Creatividad sin Límites</h2>
     <p>Recursos, guías y herramientas para diseñar como un verdadero explorador del universo.</p>
-    <a href="" class="buttons"><button>Acceder a Recursos</button></a>
+    <a href="#recursos" class="buttons"><button>Acceder a Recursos</button></a>
 
     <div class="iconosGraficos">
         <ul class="iconos">
@@ -19,43 +49,25 @@
     <div class="descargas">
         <h3><span><img src="assets/img/btns.png" alt=""></span> Manual de Artes Videss Smart</h3>
         <p>Aquí encontrarás las pautas para el uso correcto del logotipo, restricciones y combinaciones de color permitidas para mantener la consistencia de nuestra marca.</p>
-        <a href=""><button><i class="fi fi-rr-download"></i>Descargar Manual de Marca</button></a>
+        <a href="uploads/instructivoDiseno.docx" download="instructivoDiseno.docx"><button class="download-button"><i class="fi fi-rr-download"></i>Descargar Manual de Marca</button></a>
     </div>
 </div>
 
 <div class="recursos">
-    <h2 class="title" id="documentosApoyo"><span class="iconTitle"><img src="assets/img/diseno.png" alt=""></span>Documentos de Diseño Gráfico</h2>
+    <h2 class="title" id="recursos"><span class="iconTitle"><img src="assets/img/diseno.png" alt=""></span>Documentos de Diseño Gráfico</h2>
     <div class="archivos">
+        <?php foreach ($recursos as $recurso): ?>
         <div class="archivo">
-            <iframe src='uploads/DG1.pdf#toolbar=0' width='100%' height='300px'></iframe>
+            <iframe src='<?php echo $recurso["documento"]?>' width='100%' height='300px'></iframe>
             <div class="textArchivo">
-                <h3>Diseño Web</h3>
+                <h3><?php echo $recurso["nombreDoc"]?></h3>
                 <ul>
-                    <li><a href=""><i class="fi fi-rr-eye-alert"></i> Vista previa</a></li>
-                    <li><a href=""><i class="fi fi-rr-download"></i> Descargar</a></li>
+                    <li><a href="<?php echo $recurso["vistaPrevia"]?>" target="_blank"><i class="fi fi-rr-eye-alert"></i> Vista previa</a></li>
+                    <li><a href="<?php echo $recurso["download"]?>" download="<?php echo $recurso["descarga"]?>"><i class="fi fi-rr-download"></i> Descargar</a></li>
                 </ul>
             </div>
         </div>
-        <div class="archivo">
-            <iframe src='uploads/DG2.pdf#toolbar=0' width='100%' height='300px'></iframe>
-            <div class="textArchivo">
-                <h3>Planes de Redes Sociales</h3>
-                <ul>
-                    <li><a href=""><i class="fi fi-rr-eye-alert"></i> Vista previa</a></li>
-                    <li><a href=""><i class="fi fi-rr-download"></i> Descargar</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="archivo">
-            <iframe src='uploads/DG3.pdf#toolbar=0' width='100%' height='300px'></iframe>
-            <div class="textArchivo">
-                <h3>Portafolio de Diseños</h3>
-                <ul>
-                    <li><a href=""><i class="fi fi-rr-eye-alert"></i> Vista previa</a></li>
-                    <li><a href=""><i class="fi fi-rr-download"></i> Descargar</a></li>
-                </ul>
-            </div>
-        </div>
+        <?php endforeach;?>
     </div>
 </div>
 
