@@ -27,9 +27,8 @@ $archivos = array_slice($archivos, 0, 3);
                     echo "<img src='$rutaCompleta' alt='Imagen'>";
                 } elseif ($extension == "pdf") {
                     echo "<iframe src='$rutaCompleta#toolbar=1' width='100%' height='300px'></iframe>";
-                } elseif (in_array($extension, ['doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx'])) {
-                    echo "<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=http://tu-dominio.com/$rutaCompleta' width='100%' height='500px'></iframe>";
-                } else {
+                } 
+                else {
                     echo "<p>📎 <a href='$rutaCompleta' target='_blank'>Descargar archivo</a></p>";
                 }
                 ?>

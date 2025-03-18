@@ -35,6 +35,15 @@ $proyectos = [
         "fechaPago" => "30",
         "estado" => "Activo",
         "pago" => "Q650.00"
+    ],
+    [
+        "nombreProyecto" => "Video Investigación",
+        "cliente" => "Abner Popol",
+        "responsable" => "Maria Dolores",
+        "fechaEntrega" => "24/03/2025",
+        "fechaPago" => "24/03/2025",
+        "estado" => "Activo",
+        "pago" => "Q450.00"
     ]
 ]
 ?>

@@ -16,11 +16,18 @@ $recursos = [
         "vistaPrevia" => "uploads/DG2.pdf"
     ],
     [
-        "documento" => "uploads/DG3.pdf#toolbar=0",
+        "documento" => "uploads/portafolioDiseño.pdf#toolbar=0",
         "nombreDoc" => "Portafolio de Diseños",
-        "download" => "uploads/DG3.pdf",
-        "descarga" => "DG3.pdf",
-        "vistaPrevia" => "uploads/DG3.pdf"
+        "download" => "uploads/portafolioDiseño.pdf",
+        "descarga" => "portafolioDiseño.pdf",
+        "vistaPrevia" => "uploads/portafolioDiseño.pdf"
+    ],
+    [
+        "documento" => "uploads/paquetesPosts.pdf#toolbar=0",
+        "nombreDoc" => "Paquetes Posts",
+        "download" => "assets/designArchivos/paquetesPosts.png",
+        "descarga" => "paquetesPosts.png",
+        "vistaPrevia" => "uploads/paquetesPosts.pdf"
     ]
 
 ]
@@ -79,31 +86,38 @@ $recursos = [
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Accordion Item #1
+                    ¿Qué servicio de diseño gráfico ofrece Videss Smart?
                 </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                <div class="accordion-body">Ofrecemos una amplia gama de servicios, incluyendo diseño de identidad corporativa, branding, diseño publicitario, creación de material digital e impreso, diseño web y UI/UX, así como personalización de gráficos para redes sociales y campañas de marketing.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Accordion Item #2
+                    ¿Cuánto tiempo toma completar un diseño?
                 </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                <div class="accordion-body">El tiempo varía según la complejidad del proyecto. Un logo básico puede tardar entre 2 y 4 días, mientras que un diseño web o una identidad corporativa pueden requerir varios días.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Accordion Item #3
+                    ¿Qué necesito proporcionar para iniciar el proyecto?
                 </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-body">
+                Dependerá del tipo de diseño. Generalmente, solicitamos: <br>
+                - Información sobre la empresa o marca. <br>
+                - Colores y estilos preferidos. <br>
+                - Referencias o ejemplos de inspiración. <br>
+                - Texto e imágenes (si el cliente las tiene). <br>
+                - Uso final del diseño (impresión, web, etc.). <br>
+                </div>
             </div>
         </div>
     </div>
