@@ -1,0 +1,57 @@
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+
+$colorLetra: rgb(255, 255, 255);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+$fondoSoporte: rgb(0, 0, 0);
+$colorLetraSoporte: rgb(203, 208, 221);
+$detallesColor: rgb(32, 32, 114);
+$detalles2: #7a52f4;
+$fondoPagina: #111827;
+$fondoPagina2: #19212e;
+
+.sugerencias{
+    background-image: url(../img/bannerSugerencias.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-family: $fuenteBold;
+        font-size: 5.5vw;
+        color: $colorLetra;
+    }
+    p{
+        font-family: $fuenteNormal;
+        font-size: 2vw;
+        font-weight: 700;
+        color: $colorLetraSoporte;
+    }
+    .formularioSugerencias{
+        margin-top: 10vw;
+
+        button{
+            border: solid 3px $detalles2;
+            width: 25vw;
+            border-radius: 30px 0 30px 0;
+            height: 6vw;
+            background: rgb(77,73,145);
+            background: linear-gradient(137deg, rgba(77,73,145,1) 0%, rgba(85,85,152,1) 35%, rgba(30,139,161,1) 100%);
+            color: $colorLetra;
+            font-family: $fuenteBold;
+            font-size: 2vw;
+        }
+    }
+}

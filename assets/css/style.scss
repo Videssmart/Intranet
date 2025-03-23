@@ -1,0 +1,68 @@
+@import 'inicio';
+@import 'menu';
+@import 'manuales';
+@import 'flujo';
+@import 'diseno';
+@import 'software';
+@import 'proyectos';
+@import 'soporte';
+@import 'sugerencias';
+@import 'novedades';
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+$colorLetra: rgb(255, 255, 255);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+
+body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#toolbar{
+    display: none !important;
+}
+
+a.buttons{
+    button{
+        background-color: $fondoBoton;
+        border: none;
+        padding: 10px 5px 10px 5px;
+        border-radius: 50px;
+        width: 25vw;
+        height: 5vw;
+        font-family: $fuenteBold;
+        color: $colorLetra;
+        font-size: 1.5vw;
+        transition: all .4s ease-in-out;
+        margin-top: 3vw;
+        &:hover{
+            background-color: $fondoBotonHover;
+        }
+    }
+}
+
+.title{
+    margin-bottom: 7vw;
+    padding-top: 7vw;
+    text-align: center;
+    font-family: $fuenteBold;
+    color: $colorLetra;
+    font-size: 4vw;
+    text-shadow: 3px 2px 1px gray;
+    .iconTitle{
+        margin-right: 3vw;
+        img{
+            width: 8%;
+        }
+    }
+}

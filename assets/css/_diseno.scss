@@ -1,0 +1,214 @@
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+$colorLetra: rgb(255, 255, 255);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+$fondoBoton: rgb(45, 130, 241);
+$fondoBotonHover: rgb(25, 25, 233);
+$fondoPagina: #111827;
+$fondoPagina2: #19212e;
+$colorExtras: #182b4b;
+$descargar: rgb(3, 155, 3);
+$cuadros: (
+    1: "Photoshop",
+    2: "Illustrator",
+    3: "Figma",
+    4: "After Effects"
+);
+.bannerGrafico{
+    background-color: $fondoPagina;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+    h2{
+        background: linear-gradient(rgb(156, 175, 240),rgb(129, 28, 223));
+        -webkit-background-clip: text;
+        color: transparent; 
+        font-family: $fuenteBold;
+        text-align: center;
+        font-size: 4vw;
+    }
+    p{
+        font-family: $fuenteNormal;
+        font-weight: 700;
+        font-size: 1.5vw;
+        color: $colorLetra;
+    }
+    .iconosGraficos{
+        .iconos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            width: 30vw;
+            gap: 50px;
+            padding: 0;
+            .icono{
+                text-align: center;
+                position: relative;
+                top: 10vw;
+                img{
+                    width: 80%;
+                    text-align: center;
+                    transition: all .3s ease-in-out;
+                    position: relative;
+
+                    &:hover{
+                        transform: scaleX(1.1);
+                    }
+
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 8vw;
+                    height: 2.5vw;
+                    top: -3vw;
+                    right: -7vw;
+                    background-color: whitesmoke;
+                    z-index: 2;
+                    border-radius: 10px;
+                    font-family: $fuenteNormal;
+                    font-weight: 700;
+                    padding-top: 5px;
+                    margin-left: 10px;
+                    transform: scale(0);
+                    transition: all .3s ease-in-out;
+                }
+                &:hover:before{
+                    transform: scale(1.1);
+                }
+
+                @each $index, $text in $cuadros {
+                    &:nth-child(#{$index})::before{
+                        content: "#{$text}";
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lineamientos{
+    background-color: $fondoPagina2;
+    padding-bottom: 6vw;
+   .descargas{
+    margin-inline: 5vw;
+    background-color: $fondoPagina;
+    color: $colorLetra;
+    padding: 3vw;
+    border-radius: 10px;
+    h3{
+        font-family: $fuenteBold;
+        font-size: 3vw;
+        span{
+            img{
+                width: 5%;
+            }
+        }
+    }
+    p{
+        font-family: $fuenteNormal;
+        font-size: 1.4vw;
+    }
+    a{
+        button{
+            border: none;
+            width: 30vw;
+            padding: 1vw;
+            background-color: $fondoBoton;
+            font-family: $fuenteBold;
+            color: $colorLetra;
+            font-size: 1.5vw;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background-color: $fondoBotonHover;
+            }
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+   }
+}
+
+
+.recursos{
+    background-color: $fondoPagina;
+    padding-bottom: 7vw;
+    .archivos{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        .archivo{
+            width: 90%;
+            background-color: $fondoPagina2;
+            .textArchivo{
+                background-color: $fondoPagina2;
+                padding: 1vw 1vw 1vw 1vw;
+                height: 10vw;
+                h3{
+                    color: $colorLetra;
+                    font-family: $fuenteBold;
+                    font-size: 1.9vw;
+                }
+                ul{
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0;
+                    padding-inline: 1vw;
+                    position: relative;
+                    top: 3vw;
+                    li:first-child{
+                        a{
+                            color: $fondoBoton;
+                        }
+                    }
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: $descargar;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.preguntasDiseno{
+    background-color: $fondoPagina2;
+    padding-bottom: 5vw;
+    .accordion{
+        padding-inline: 5vw;
+        .accordion-item{
+            .accordion-header{
+                .accordion-button{
+                    background-color: $fondoBoton;
+                    font-family: $fuenteBold;
+                    color: $colorLetra;
+                    font-size: 2vw;
+                }
+            }
+            .accordion-collapse{
+                div{
+                    font-family: $fuenteNormal;
+                    font-weight: 700;
+                    font-size: 1.2vw;
+                }
+            }
+        }
+    }
+}

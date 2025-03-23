@@ -1,0 +1,150 @@
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+
+$colorLetra: rgb(255, 255, 255);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+$fondoNovedades: rgb(0, 0, 0);
+$colorLetraNov: rgb(203, 208, 221);
+$detallesColor: rgb(32, 32, 114);
+$detalles2: #7b52f436;
+$detalles3: #7b52f4;
+$fondoPagina: #111827;
+$fondoPagina2: #19212e;
+
+.bannerNovedades{
+    background-color: $fondoNovedades;
+    height: 70vw;
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-family: $fuenteBold;
+        font-size: 4vw;
+        color: $colorLetra;
+    }
+    p{
+        font-family: $fuenteNormal;
+        font-weight: 700;
+        font-size: 1.5vw;
+        color: $colorLetra;
+    }
+    .lanzamientos{
+        margin-top: 5vw;
+        background-color: $detalles2;
+        border: solid 1px $detalles3;
+        padding: 8vw 2vw 8vw 2vw;
+        width: 70%;
+        border-radius: 40px;
+        text-align: center;
+        h3{
+            font-family: $fuenteBold;
+            font-size: 3vw;
+            color: $colorLetra;
+        }
+        p{
+            font-size: 1.2vw;
+            color: $colorLetraNov;
+        }
+        button{
+            margin-top: 2vw;
+            padding: 1vw;
+            width: 15vw;
+            border: none;
+            border-radius: 30px;
+            background-color: $detalles3;
+            color: $colorLetra;
+            font-family: $fuenteBold;
+            font-size: 1.7vw;
+        }
+    }    
+}
+
+.noticiasDestacadas{
+    background-color: $fondoNovedades;
+    padding-bottom: 9vw;
+
+    h2{
+        font-family: $fuenteBold;
+        color: $colorLetra;
+        margin-left: 4vw;
+        font-size: 3vw;
+    }
+    .carousel{
+        margin-inline: 4vw;
+        padding-bottom: 4vw;
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    border-radius: 40px;
+                }
+            }
+        }
+        .carousel-control-prev{
+            .carousel-control-prev-icon{
+                background-color: $fondoPagina;
+                width: 4vw;
+                height: 4vw;
+                border-radius: 50px;
+            }
+        }
+        .carousel-control-next{
+            .carousel-control-next-icon{
+                background-color: $fondoPagina;
+                width: 4vw;
+                height: 4vw;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+.anuncios{
+    background-color: $fondoNovedades;
+    h2{
+        font-family: $fuenteBold;
+        color: $colorLetra;
+        margin-left: 4vw;
+        font-size: 3vw;
+    }
+    .cardsAnuncios{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        margin-inline: 4vw;
+        padding-top: 2vw;
+        .card{
+            padding: 1.3vw;
+            border: solid 1px $detalles3;
+            background-color: transparent;
+            h4{
+                font-family: $fuenteBold;
+                color: $colorLetra;
+            }
+            p{
+                font-family: $fuenteNormal;
+                font-weight: 700;
+                color: $colorLetraNov;
+            }
+            a{
+                button{
+                    background-color: transparent;
+                    border: none;
+                    color: $colorLetraNov;
+                    font-family: $fuenteNormal;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

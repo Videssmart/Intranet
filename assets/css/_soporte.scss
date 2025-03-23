@@ -1,0 +1,353 @@
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+
+$colorLetra: rgb(255, 255, 255);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+$fondoSoporte: rgb(0, 0, 0);
+$colorLetraSoporte: rgb(203, 208, 221);
+$detallesColor: rgb(32, 32, 114);
+$detalles2: #7a52f4;
+$fondoPagina: #111827;
+$fondoPagina2: #19212e;
+$colores: (
+    1: rgb(77, 73, 145),
+    2: rgb(132, 73, 145),
+    3: rgb(80, 73, 145),
+    4: rgb(223, 166, 18),
+    5: rgb(91, 223, 18),
+    6: rgb(223, 221, 18)
+);
+$gradientes: (
+    1: linear-gradient(151deg, rgba(77, 73, 145, 1) 0%, rgba(64, 64, 152, 1) 55%, rgba(127, 220, 238, 1) 100%),
+    2: linear-gradient(151deg, rgba(132, 73, 145, 1) 0%, rgba(127, 64, 152, 1) 55%, rgba(181, 127, 238, 1) 100%),
+    3: linear-gradient(151deg, rgba(80, 73, 145, 1) 0%, rgba(64, 97, 152, 1) 55%, rgba(127, 232, 238, 1) 100%),
+    4: linear-gradient(151deg, rgba(223, 166, 18, 1) 0%, rgba(214, 132, 38, 1) 55%, rgba(238, 233, 127, 1) 100%),
+    5: linear-gradient(151deg, rgba(91, 223, 18, 1) 0%, rgba(123, 227, 94, 1) 55%, rgba(168, 238, 127, 1) 100%),
+    6: linear-gradient(151deg, rgba(223, 221, 18, 1) 0%, rgba(217, 227, 94, 1) 55%, rgba(228, 238, 127, 1) 100%)
+);
+
+.bannerSoporte {
+    background-color: $fondoSoporte;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        background: linear-gradient(rgb(156, 175, 240), rgb(129, 28, 223));
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: $fuenteBold;
+        font-size: 4vw;
+    }
+
+    p {
+        color: $colorLetra;
+        font-weight: 700;
+        font-family: $fuenteNormal;
+        font-size: 1.5vw;
+    }
+}
+
+.categoriaSoporte {
+    background-color: $fondoSoporte;
+    text-align: center;
+
+    h2 {
+        font-family: $fuenteBold;
+        color: $colorLetra;
+        font-size: 3.4vw;
+    }
+
+    p.textHeader {
+        font-family: $fuenteNormal;
+        font-weight: 700;
+        font-size: 1.3vw;
+        color: $colorLetraSoporte;
+    }
+
+    .cardsCategorias {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin-top: 6vw;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding-inline: 2vw;
+
+        .card {
+            width: 100%;
+            height: 15vw;
+            border: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            position: relative;
+            transition: all .3s ease-in-out;
+
+            @each $index, $gradiente in $gradientes {
+                &:nth-child(#{$index}) {
+                    background: $gradiente;
+                }
+            }
+
+            &:before {
+                content: " ";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.76);
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover:before {
+                background-color: rgba(0, 0, 0, 0.363);
+
+            }
+
+            .icon {
+                font-size: 3vw;
+                background-color: rgba(0, 0, 0, 0.411);
+                width: 20%;
+                height: 5.8vw;
+                border-radius: 50px;
+                border: solid 3px $detallesColor;
+                z-index: 2;
+
+                i {
+                    position: relative;
+                    top: 10px;
+                    color: $colorLetra;
+                }
+            }
+
+            h3 {
+                font-family: $fuenteBold;
+                color: $colorLetra;
+                margin: 0;
+                margin-top: 15px;
+                z-index: 2;
+
+            }
+
+            p {
+                font-family: $fuenteNormal;
+                font-weight: 700;
+                font-size: 1vw;
+                z-index: 2;
+                color: $colorLetraSoporte;
+            }
+        }
+    }
+}
+
+
+.formulario {
+    background-color: $fondoSoporte;
+    padding-block: 14vw;
+
+    .form {
+        border: solid 1px;
+        margin-inline: 18vw;
+        padding-block: 5vw;
+        border-radius: 30px;
+
+        h3 {
+            text-align: center;
+            font-family: $fuenteBold;
+            color: $colorLetra;
+            font-size: 2.5vw;
+        }
+
+        p {
+            text-align: center;
+            font-family: $fuenteNormal;
+            font-weight: 700;
+            color: $colorLetraSoporte;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding-inline: 3vw;
+            color: $colorLetraSoporte;
+            font-family: $fuenteNormal;
+            font-weight: 700;
+
+            .categoria {
+                width: 100%;
+                background-color: transparent;
+                color: $colorLetra;
+                font-weight: 700;
+                font-size: 1vw;
+                padding: .5vw;
+                border: solid 1px $detalles2;
+                border-radius: 5px;
+
+                option {
+                    background-color: $fondoSoporte;
+                }
+
+                margin-bottom: 40px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 15vw;
+                padding: .5vw;
+                font-weight: 700;
+                background-color: transparent;
+                border: solid 1px $detalles2;
+                border-radius: 5px;
+                color: $colorLetra;
+            }
+
+            sub {
+                margin-top: 10px;
+                margin-bottom: 40px;
+            }
+
+            .input2 {
+                .prioridad {
+                    margin-right: 10vw;
+                    width: 20vw;
+                }
+
+                .ubi {
+                    width: 20vw;
+                }
+
+                input,
+                select {
+                    padding: .5vw;
+                    background-color: transparent;
+                    border: solid 1px $detalles2;
+                    border-radius: 5px;
+                    color: $colorLetra;
+                }
+
+                select {
+                    option {
+                        background-color: $fondoSoporte;
+                    }
+                }
+
+                margin-bottom: 40px;
+            }
+
+            .upload-box {
+                text-align: center;
+                border: 2px dashed $detalles2;
+                padding: 20px;
+                border-radius: 10px;
+                width: 100%;
+                color: white;
+                background: #111;
+                margin-bottom: 40px;
+            }
+
+            .upload-label {
+                cursor: pointer;
+                display: block;
+                padding: 10px;
+            }
+
+            .click {
+                color: $detalles2;
+                cursor: pointer;
+            }
+
+            .formats {
+                font-size: 12px;
+                color: gray;
+            }
+
+            .submit {
+                width: 100%;
+                background: rgb(17, 54, 187);
+                background: linear-gradient(93deg, rgba(17, 54, 187, 1) 0%, rgba(115, 84, 182, 1) 55%, rgba(101, 126, 189, 1) 100%);
+                color: $colorLetra;
+                font-family: $fuenteBold;
+                font-size: 1.3vw;
+                padding-block: .5vw;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+
+.tickets {
+    background-color: $fondoSoporte;
+
+    .seguimiento {
+        border: solid 1px $detalles2;
+        padding-block: 5vw;
+        margin-inline: 2vw;
+        border-radius: 20px;
+        h2 {
+            text-align: center;
+            font-family: $fuenteBold;
+            color: $colorLetra;
+            font-size: 2.9vw;
+        }
+
+        p {
+            text-align: center;
+            font-family: $fuenteNormal;
+            color: $colorLetraSoporte;
+            font-size: 1.5vw;
+
+        }
+
+        table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-block: 5vw;
+
+            .trHead {
+                background-color: $fondoPagina;
+                color: $colorLetraSoporte;
+
+                th {
+                    font-family: $fuenteBold;
+                    font-size: 1.6vw;
+                    padding-inline: 3vw;
+                    padding-block: 1vw;
+                    border-bottom: solid 1px $colorLetra;
+                }
+            }
+
+            .trBody {
+                text-align: center;
+                border: solid 1px $detalles2;
+                border-radius: 0 0 10px 10px ;
+                td {
+                    padding-block: 1vw;
+                    padding-left: 2vw;
+                    font-family: $fuenteNormal;
+                    font-weight: 700;
+                    color: $colorLetra;
+                    border-top: solid 1px $detalles2;
+                }
+            }
+        }
+    }
+}

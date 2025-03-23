@@ -1,0 +1,130 @@
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+
+$colorLetra: rgb(255, 255, 255);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+$fondoBoton: rgb(45, 130, 241);
+$fondoBotonHover: rgb(25, 25, 233);
+$fondoPagina: #111827;
+$fondoPagina2: #19212e;
+$colorExtras: #182b4b;
+$colorLetra2: rgb(124, 124, 124);
+
+.bannerManuales {
+    background-image: url(../img/bannerProtocolos.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vw;
+
+    h2 {
+        background: linear-gradient(rgb(156, 175, 240), rgb(129, 28, 223));
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: $fuenteBold;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    p {
+        font-family: $fuenteNormal;
+        font-size: 2vw;
+        color: $colorLetra;
+        font-weight: 700;
+    }
+}
+
+.categoriasManuales {
+    background-color: $fondoPagina2;
+    padding-bottom: 5vw;
+    .categorias {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+
+        .categoria {
+            background-color: $fondoPagina;
+            color: $colorLetra;
+            width: 90%;
+            text-align: center;
+            padding-block: 4vw;
+            padding-inline: .7vw;
+            display: flex;
+            flex-direction: column;
+            gap: .5vw;
+            border-radius: 20px;
+            transition: all .4s ease-in-out;
+            i {
+                font-size: 4vw;
+                background: linear-gradient(rgb(156, 175, 240), rgb(129, 28, 223));
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            h3 {
+                font-family: $fuenteBold;
+                font-size: 1.9vw;
+            }
+
+            p {
+                font-family: $fuenteNormal;
+                font-weight: 700;
+                color: $colorLetra2;
+                font-size: 1.3vw;
+            }
+
+            a {
+                button {
+                    background-color: $fondoBoton;
+                    border: none;
+                    padding: 10px 5px 10px 5px;
+                    border-radius: 50px;
+                    width: 20vw;
+                    height: 3vw;
+                    font-family: $fuenteBold;
+                    color: $colorLetra;
+                    font-size: 1.2vw;
+                    transition: all .4s ease-in-out;
+
+                    &:hover {
+                        background-color: $fondoBotonHover;
+                    }
+                }
+            }
+            &:hover{
+                transform: scale(1.07);
+            }
+        }
+    }
+}
+
+.texto{
+    background-color: $fondoPagina;
+    padding: 4vw;
+    h4{
+        text-align: center;
+        font-family: $fuenteBold;
+        font-size: 4vw;
+        margin: 0;
+        background: linear-gradient(rgb(156, 175, 240), rgb(129, 28, 223));
+        -webkit-background-clip: text;
+        color: transparent;
+        .iconFoot{
+            img{
+                width: 10%;
+            }
+        }
+    }
+}
