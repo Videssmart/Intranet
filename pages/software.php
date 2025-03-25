@@ -3,7 +3,10 @@ $softwares = [
     [
         "categoria" => "Redes Sociales y Marketing",
         "programas" => [
-            ["prog" => "Meta Suite Business"]
+            ["prog" => "Meta Suite Business"],
+            ["prog" => "Facebook"],
+            ["prog" => "Instagram"],
+            ["prog" => "HubSpot CRM"]
         ]
     ],
     [
