@@ -6,7 +6,8 @@ $proyectos = [
         "responsable" => "Maria Dolores",
         "fechaEntrega" => "00/00/0000",
         "fechaPago" => "28",
-        "estado" => "Activo",
+        "estado" => "Atrasado",
+        "estado2" => "Atrasado",        
         "pago" => "Q650.00"
     ],
     [
@@ -15,8 +16,9 @@ $proyectos = [
         "responsable" => "Maria Dolores",
         "fechaEntrega" => "00/00/0000",
         "fechaPago" => "14",
-        "estado" => "Activo",
-        "pago" => "Q325.00"
+        "estado" => "Pagado",
+        "estado2" => "Pagado",
+        "pago" => "--"
     ],
     [
         "nombreProyecto" => "Manejo de Redes",
@@ -24,7 +26,8 @@ $proyectos = [
         "responsable" => "Maria Dolores",
         "fechaEntrega" => "00/00/0000",
         "fechaPago" => "14",
-        "estado" => "Activo",
+        "estado" => "Atrasado",
+        "estado2" => "Atrasado",
         "pago" => "Q232.50"
     ],
     [
@@ -34,6 +37,7 @@ $proyectos = [
         "fechaEntrega" => "00/00/0000",
         "fechaPago" => "10/04/2025",
         "estado" => "Activo",
+        "estado2" => "Activo",
         "pago" => "Q650.00"
     ],
     [
@@ -43,6 +47,7 @@ $proyectos = [
         "fechaEntrega" => "24/03/2025",
         "fechaPago" => "24/03/2025",
         "estado" => "Pagado",
+        "estado2" => "Pagado",
         "pago" => "--"
     ]
 ]
@@ -87,7 +92,7 @@ $proyectos = [
 </div>
 
 <div class="listado">
-    <h2>Listado de Planes Mensuales</h2>
+    <h2>Listado de Proyectos</h2>
     <table class="rwd-table">
         <tr class="trHead">
             <th>NOMBRE DEL PROYECTO</th>
@@ -105,9 +110,26 @@ $proyectos = [
             <td data-th="col3"><?php echo $proyecto["responsable"]?></td>
             <td data-th="col4"><?php echo $proyecto["fechaEntrega"]?></td>
             <td data-th="col5"><?php echo $proyecto["fechaPago"]?></td>
-            <td data-th="col6" class="estado"><p><?php echo $proyecto["estado"]?></p></td>
+            <td data-th="col6" class="estado"><p data-estado="<?php echo $proyecto["estado2"]?>"><?php echo $proyecto["estado"]?></p></td>
             <td data-th="col5"><?php echo $proyecto["pago"]?></td>
         </tr>
         <?php endforeach;?>
     </table>
+</div>
+
+
+
+
+<div class="proyectos">
+    <h2 class="title" id="documentosApoyo"><span class="iconTitle"><img src="assets/img/tiempoReal.png" alt=""></span>Proyectos en Tiempo Real</h2>
+
+    <div class="progreso">
+        <h3>--</h3>
+        <p>Estado: --</p>
+        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%">100%</div>
+        </div>
+    </div>
+    <a href="https://www.notion.so/185383ae3d7080efac15f0fd77787e81?v=185383ae3d70802b99ec000cc455c49a&pvs=4" target="_blank" class="buttons"><button>Ver Proyectos</button></a>
+
 </div>

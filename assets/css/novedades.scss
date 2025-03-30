@@ -120,9 +120,11 @@ $fondoPagina2: #19212e;
         display: grid;
         justify-items: center;
         align-items: center;
+        gap: 2vw;
         grid-template-columns: repeat(3, 1fr);
         margin-inline: 4vw;
         padding-top: 2vw;
+        
         .card{
             padding: 1.3vw;
             border: solid 1px $detalles3;

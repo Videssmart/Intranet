@@ -28,11 +28,9 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Procedimientos
+            Servicios Smart
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.php?seccion=protocolos">Manuales y protocolos</a></li>
-            <li><a class="dropdown-item" href="index.php?seccion=flujo">Flujo de trabajo</a></li>
             <li><a class="dropdown-item" href="index.php?seccion=diseno">Diseño Grafico</a></li>
           </ul>
         </li>
@@ -41,8 +39,9 @@
             Herramientas
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.php?seccion=software">Software y aplicaciones</a></li>
             <li><a class="dropdown-item" href="index.php?seccion=proyectos">Gestión de proyectos</a></li>
+            <li><a class="dropdown-item" href="index.php?seccion=archivos">Manuales y archivos</a></li>
+            <li><a class="dropdown-item" href="index.php?seccion=flujo">Flujo de trabajo</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

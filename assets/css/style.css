@@ -323,23 +323,6 @@
         margin: 0;
         font-size: 2.5vw; }
 
-.proyectos {
-  background-color: #111827;
-  padding-bottom: 5vw; }
-  .proyectos .progreso {
-    margin-inline: 5vw;
-    background-color: #19212e;
-    padding: 3vw;
-    border-radius: 20px; }
-    .proyectos .progreso h3 {
-      color: #168fbe;
-      font-family: garet-bold; }
-    .proyectos .progreso p {
-      color: lightgray;
-      font-family: garet-normal; }
-    .proyectos .progreso .progress .progress-bar {
-      font-family: garet-normal; }
-
 @font-face {
   font-family: garet-normal;
   src: url(../fuentes/Garet-Book.otf); }
@@ -347,7 +330,9 @@
   font-family: garet-bold;
   src: url(../fuentes/Garet-Heavy.otf); }
 .bannerGrafico {
-  background-color: #111827;
+  background-image: url(../img/fondoDesign.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -449,7 +434,8 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; }
     .recursos .archivos .archivo {
       width: 90%;
       background-color: #19212e; }
@@ -489,173 +475,6 @@
     .preguntasDiseno .accordion .accordion-item .accordion-collapse div {
       font-family: garet-normal;
       font-weight: 700;
-      font-size: 1.2vw; }
-
-@font-face {
-  font-family: garet-normal;
-  src: url(../fuentes/Garet-Book.otf); }
-@font-face {
-  font-family: garet-bold;
-  src: url(../fuentes/Garet-Heavy.otf); }
-.bannerSoftware {
-  background-color: #111827;
-  height: 45vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .bannerSoftware h2 {
-    font-family: garet-bold;
-    background: linear-gradient(#9caff0, #811cdf);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 4.5vw; }
-  .bannerSoftware p {
-    font-family: garet-normal;
-    color: white;
-    font-weight: 700;
-    font-size: 2vw; }
-
-.introduccion {
-  background-color: #19212e;
-  padding-block: 4vw; }
-  .introduccion .row .col-md-5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .introduccion .row .col-md-5 h3 {
-      font-family: garet-bold;
-      background: linear-gradient(#9caff0, #811cdf);
-      -webkit-background-clip: text;
-      color: transparent;
-      font-size: 3.5vw;
-      text-align: left; }
-    .introduccion .row .col-md-5 p {
-      font-family: garet-normal;
-      font-weight: 700;
-      color: white;
-      font-size: 1.4vw;
-      text-align: left; }
-  .introduccion .row .col-md-7 img {
-    width: 100%;
-    border-radius: 5px;
-    transition: all .3s ease-in-out; }
-    .introduccion .row .col-md-7 img:hover {
-      box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-      transform: scale(0.99); }
-
-.aplicaciones {
-  background-color: #111827;
-  padding-bottom: 5vw; }
-  .aplicaciones .cardsApps {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    padding-inline: 30px; }
-    .aplicaciones .cardsApps .card {
-      width: 95%;
-      padding: 1vw 0 1vw 2vw;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      background-color: #19212e;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all .3s ease-in-out; }
-      .aplicaciones .cardsApps .card:hover {
-        box-shadow: rgba(46, 179, 240, 0.178) 0px 5px, rgba(46, 114, 240, 0.3) 0px 10px, rgba(46, 153, 240, 0.2) 0px 15px, rgba(46, 137, 240, 0.1) 0px 20px, rgba(46, 75, 240, 0.05) 0px 25px, rgba(46, 179, 240, 0.178) -5px 5px, rgba(46, 114, 240, 0.3) -10px 10px, rgba(46, 153, 240, 0.2) -15px 15px, rgba(46, 137, 240, 0.1) -20px 20px, rgba(46, 75, 240, 0.05) -25px 25px, rgba(46, 179, 240, 0.178) 5px 5px, rgba(46, 114, 240, 0.3) 10px 10px, rgba(46, 153, 240, 0.2) 15px 15px, rgba(46, 137, 240, 0.1) 20px 20px, rgba(46, 75, 240, 0.05) 25px 25px;
-        transform: translateY(-10px); }
-      .aplicaciones .cardsApps .card h4 {
-        font-family: garet-bold;
-        color: #8a96ff; }
-      .aplicaciones .cardsApps .card ul {
-        display: flex;
-        flex-direction: column;
-        gap: 10px; }
-        .aplicaciones .cardsApps .card ul li::marker {
-          color: #b132b6; }
-        .aplicaciones .cardsApps .card ul li {
-          color: white;
-          font-family: garet-normal;
-          font-weight: 700;
-          font-size: 1.2vw; }
-
-.accesos {
-  background-color: #19212e;
-  padding-bottom: 5vw; }
-  .accesos .accesosDirectos {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    padding-inline: 2vw; }
-    .accesos .accesosDirectos .links {
-      background-color: #182b4b;
-      width: 95%;
-      text-align: center;
-      padding: 2vw;
-      height: 10vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-      transition: all .3s ease-in-out; }
-      .accesos .accesosDirectos .links:hover {
-        background-color: #2d82f1; }
-      .accesos .accesosDirectos .links a {
-        text-decoration: none;
-        color: white;
-        font-family: garet-bold;
-        font-size: 1.5vw; }
-
-.preguntas {
-  background-color: #111827;
-  padding-bottom: 5vw; }
-  .preguntas .accordion {
-    margin-inline: 10vw; }
-    .preguntas .accordion .accordion-item .accordion-header {
-      font-family: garet-bold; }
-      .preguntas .accordion .accordion-item .accordion-header .accordion-button {
-        background-color: #111827;
-        color: white; }
-    .preguntas .accordion .accordion-item .accordion-collapse .accordion-body {
-      background-color: #111827;
-      font-family: garet-normal;
-      font-weight: 700;
-      font-size: 1.2vw;
-      color: white; }
-
-.contacto {
-  background-color: #19212e;
-  padding-bottom: 5vw;
-  text-align: center; }
-  .contacto .botones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px; }
-    .contacto .botones .boton1 {
-      background-color: #2d82f1;
-      border: none;
-      padding: 1.5vw 3vw 1.5vw 3vw;
-      transition: all .3s ease-in-out; }
-      .contacto .botones .boton1:hover {
-        background-color: #1919e9; }
-    .contacto .botones .boton2 {
-      background-color: #b132b6;
-      border: none;
-      padding: 1.5vw 3vw 1.5vw 3vw;
-      transition: all .3s ease-in-out; }
-      .contacto .botones .boton2:hover {
-        background-color: #78287a; }
-    .contacto .botones .boton1, .contacto .botones .boton2 {
-      border-radius: 10px;
-      color: white;
-      font-family: garet-bold;
       font-size: 1.2vw; }
 
 @font-face {
@@ -748,9 +567,17 @@
         color: white; }
       .listado .rwd-table .trBody .estado p {
         margin: 0;
-        background-color: #11be11;
         text-align: center;
-        border-radius: 50px; }
+        border-radius: 50px;
+        width: 6vw; }
+      .listado .rwd-table .trBody .estado p[data-estado="Activo"] {
+        background-color: #11be11; }
+      .listado .rwd-table .trBody .estado p[data-estado="Pagado"] {
+        background-color: red; }
+      .listado .rwd-table .trBody .estado p[data-estado="Cancelado"] {
+        background-color: #72727e; }
+      .listado .rwd-table .trBody .estado p[data-estado="Atrasado"] {
+        background-color: orange; }
     .listado .rwd-table th {
       display: none; }
     .listado .rwd-table td {
@@ -793,6 +620,28 @@
   .listado .rwd-table th,
   .listado .rwd-table td:before {
     color: #dd5; }
+
+.proyectos {
+  background-color: #111827;
+  padding-bottom: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .proyectos .progreso {
+    margin-inline: 5vw;
+    background-color: #19212e;
+    padding: 3vw;
+    border-radius: 20px;
+    width: 80vw; }
+    .proyectos .progreso h3 {
+      color: #168fbe;
+      font-family: garet-bold; }
+    .proyectos .progreso p {
+      color: lightgray;
+      font-family: garet-normal; }
+    .proyectos .progreso .progress .progress-bar {
+      font-family: garet-normal; }
 
 @font-face {
   font-family: garet-normal;
@@ -1160,6 +1009,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
+    gap: 2vw;
     grid-template-columns: repeat(3, 1fr);
     margin-inline: 4vw;
     padding-top: 2vw; }

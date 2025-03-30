@@ -22,7 +22,9 @@ $cuadros: (
     4: "After Effects"
 );
 .bannerGrafico{
-    background-color: $fondoPagina;
+    background-image: url(../img/fondoDesign.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,6 +151,7 @@ $cuadros: (
         justify-items: center;
         align-items: center;
         grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
         .archivo{
             width: 90%;
             background-color: $fondoPagina2;

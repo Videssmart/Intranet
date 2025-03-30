@@ -20,10 +20,13 @@ $colorVineta: rgb(177, 50, 182);
 $fondoVinetaHover: rgb(120, 40, 122);
 $colorTitulo: rgb(138, 150, 255);
 $colorExtra2: rgb(177, 177, 177);
-$breakpoint-alpha: 480px; 
+$breakpoint-alpha: 480px;
 $colorTitulo2: #dd5;
 $estados: (
-    1: rgb(17, 190, 17)
+    "Activo": rgb(17, 190, 17),
+    "Pagado": rgb(255, 0, 0),
+    "Cancelado": rgb(114, 114, 126),
+    "Atrasado": rgb(255, 165, 0),
 );
 
 .bannerProyectos {
@@ -85,9 +88,9 @@ $estados: (
                 li {
                     font-size: 2.5vw;
                     font-family: $fuenteBold;
-                    background: linear-gradient(rgb(156, 175, 240),rgb(129, 28, 223));
+                    background: linear-gradient(rgb(156, 175, 240), rgb(129, 28, 223));
                     -webkit-background-clip: text;
-                    color: transparent; 
+                    color: transparent;
                 }
             }
 
@@ -114,38 +117,48 @@ $estados: (
         font-size: 2.9vw;
     }
 
- 
+
 
     .rwd-table {
         margin: 4vw 0;
-        width: 80%; 
+        width: 80%;
+
         .trHead {
             background-color: $colorExtras;
-            th{
+
+            th {
                 color: $colorTitulo2;
                 font-family: $fuenteBold;
             }
         }
-        .trBody{
+
+        .trBody {
             background-color: $fondoPagina;
-            td{
+
+            td {
                 color: $fuenteNormal;
                 font-weight: 700;
                 font-size: 1.3vw;
                 color: $colorLetra;
             }
-            .estado{
-                p{
+
+            .estado {
+                p {
                     margin: 0;
-                    background-color: map-get($estados, 1);
                     text-align: center;
                     border-radius: 50px;
+                    width: 6vw;
+                }
+            }
+            @each $estado, $color in $estados {
+                .estado p[data-estado="#{$estado}"] {
+                    background-color: $color;
                 }
             }
         }
 
         th {
-            display: none;  
+            display: none;
         }
 
         td {
@@ -160,10 +173,10 @@ $estados: (
             }
 
             &:before {
-                content: attr(data-th)": "; 
+                content: attr(data-th)": ";
                 font-weight: bold;
 
-                width: 6.5em; 
+                width: 6.5em;
                 display: inline-block;
 
                 @media (min-width: $breakpoint-alpha) {
@@ -193,10 +206,12 @@ $estados: (
 
 
     }
+
     .rwd-table {
         tr {
             border-color: lighten(#34495E, 10%);
         }
+
         th,
         td {
             margin: .5em 1em;
@@ -205,9 +220,44 @@ $estados: (
                 padding: 1em !important;
             }
         }
+
         th,
         td:before {
             color: #dd5;
+        }
+    }
+}
+
+
+.proyectos {
+    background-color: $fondoPagina;
+    padding-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .progreso {
+        margin-inline: 5vw;
+        background-color: $fondoPagina2;
+        padding: 3vw;
+        border-radius: 20px;
+        width: 80vw;
+
+        h3 {
+            color: $colorLetra3;
+            font-family: $fuenteBold;
+        }
+
+        p {
+            color: $colorLetra2;
+            font-family: $fuenteNormal;
+        }
+
+        .progress {
+            .progress-bar {
+                font-family: $fuenteNormal;
+            }
         }
     }
 }

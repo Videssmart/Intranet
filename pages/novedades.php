@@ -1,3 +1,21 @@
+<?php 
+$anuncios = [
+    [
+        "TituloAnuncio" => "Nueva Plataforma HubSpot",
+        "Parrafo" => "Se ha implementado una nueva plataforma que optimizará el trabajo y el seguimiento de clientes."
+    ],
+    [
+        "TituloAnuncio" => "Nuevo Metodo de Pago",
+        "Parrafo" => "Se ha implementado una nueva forma de pago que facilitará las transacciones a nuestros clientes."
+    ],
+    [
+        "TituloAnuncio" => "Entregas con Google Drive",
+        "Parrafo" => "Se ha implementado un nuevo sistema de entrega de proyecto mediante Google Drive."
+    ]
+]
+?>
+
+
 <div class="bannerNovedades">
     <h2>¡Últimas Novedades de Videss Smart!</h2>
     <p>Mantente al día con lo más importante de nuestra empresa</p>
@@ -19,13 +37,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/img/carouselNov1.jpg" class="d-block w-100" alt="...">
+                <img src="assets/novedadesImg/hubSpot.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="assets/img/carouselNov1.jpg" class="d-block w-100" alt="...">
+                <img src="assets/novedadesImg/banrural.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="assets/img/carouselNov1.jpg" class="d-block w-100" alt="...">
+                <img src="assets/novedadesImg/drive.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -42,10 +60,12 @@
 <div class="anuncios">
     <h2>Ultimos Anuncios</h2>
     <div class="cardsAnuncios">
+        <?php foreach ($anuncios as $anuncio): ?>
         <div class="card">
-            <h4>Actualización de políticas de trabajo remoto</h4>
-            <p>Se han actualizado las políticas de trabajo remoto para permitir mayor flexibilidad</p>
-            <a href=""><button>Leer más ></button></a>
+            <h4><?php echo $anuncio["TituloAnuncio"]?></h4>
+            <p><?php echo $anuncio["Parrafo"]?></p>
+            <a href=""><button>Ver más ></button></a>
         </div>
+        <?php endforeach;?>
     </div>
 </div>

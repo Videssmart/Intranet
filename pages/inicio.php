@@ -6,6 +6,8 @@ usort($archivos, function ($a, $b) use ($directorio) {
 });
 
 $archivos = array_slice($archivos, 0, 3);
+
+
 ?>
 <div class="bannerInicio">
     <h2>Bienvenido a la Base de Control de Videss Smart</h2>
@@ -27,15 +29,14 @@ $archivos = array_slice($archivos, 0, 3);
                     echo "<img src='$rutaCompleta' alt='Imagen'>";
                 } elseif ($extension == "pdf") {
                     echo "<iframe src='$rutaCompleta#toolbar=1' width='100%' height='300px'></iframe>";
-                } 
-                else {
+                } else {
                     echo "<p>📎 <a href='$rutaCompleta' target='_blank'>Descargar archivo</a></p>";
                 }
                 ?>
             </div>
         <?php endforeach; ?>
     </div>
-    <a href="index.php?seccion=protocolos" class="buttons"><button>Ver más documentos</button></a>
+    <a href="https://www.notion.so/Herramientas-188383ae3d70805a90bdea2966600a4c?pvs=4" target="_blank" class="buttons"><button>Ver todos los documentos</button></a>
 
 </div>
 
@@ -67,13 +68,13 @@ $archivos = array_slice($archivos, 0, 3);
             </span>
             <ul class="modulosLista">
                 <li>
-                    <p>Negocios cerrados:  <strong>--</strong></p>
+                    <p>Negocios cerrados: <strong>--</strong></p>
                 </li>
                 <li>
-                    <p>Satisfacción del cliente:  <strong>--</strong></p>
+                    <p>Satisfacción del cliente: <strong>--</strong></p>
                 </li>
                 <li>
-                    <p>Captación:  <strong>--</strong></p>
+                    <p>Captación: <strong>--</strong></p>
                 </li>
                 <li>
                     <p>Ganancia: <strong>--</strong></p>
@@ -104,12 +105,12 @@ $archivos = array_slice($archivos, 0, 3);
     <h2 class="title"><span class="iconTitle"><img src="assets/img/novedad.png" alt=""></span>Novedades en los Procesos</h2>
     <div class="card">
         <div class="card-header">
-            <img src="assets/img/novedadProceso.png" alt="">
+            <img src="assets/novedadesImg/banrural.png" alt="">
         </div>
         <div class="card-body">
             <h5 class="card-title">Conoce como mejoramos nuestros procesos</h5>
-            <p class="card-text">Conoce los detalles de la nueva herramienta y convierte en alguien experto.</p>
-            <a href="index.php?seccion=software" class="btn btn-primary">Ver Detalles</a>
+            <p class="card-text">Conoce los detalles acerca de nuestras mejoras en los procesos.</p>
+            <a href="index.php?seccion=novedades" class="btn btn-primary">Ver Detalles</a>
         </div>
     </div>
 
@@ -129,7 +130,7 @@ $archivos = array_slice($archivos, 0, 3);
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                Puedes encontrar todos los detalles en el apartado de <strong>Procedimientos</strong> en el menú y después en el apartado de <strong>Manuales y protocolos</strong>. Ahí encontraras todos los detalles.
+                                Puedes encontrar todos los detalles en <strong>Procedimientos</strong> en el menú y en <strong>Manuales y protocolos</strong>. Ahí encontraras todos los detalles. También puedes encontrarlo en Notion.
                             </div>
                         </div>
                     </div>
@@ -161,9 +162,11 @@ $archivos = array_slice($archivos, 0, 3);
             </div>
             <div class="col">
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Contacta a Soporte</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <button class="btn btn-primary" type="button"><i class="fi fi-rr-paper-plane"></i>Enviar</button>
+                    <form action="https://formspree.io/f/xqapddwl" method="POST">
+                        <label for="exampleFormControlTextarea1" class="form-label">Contacta a Soporte</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+                        <button class="btn btn-primary" type="submit"><i class="fi fi-rr-paper-plane"></i>Enviar</button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -19,15 +19,3 @@
     </div>
 </div>
 
-<div class="proyectos">
-    <h2 class="title" id="documentosApoyo"><span class="iconTitle"><img src="assets/img/tiempoReal.png" alt=""></span>Proyectos en Tiempo Real</h2>
-
-    <div class="progreso">
-        <h3>--</h3>
-        <p>Estado: --</p>
-        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar" style="width: 100%">100%</div>
-        </div>
-    </div>
-
-</div>

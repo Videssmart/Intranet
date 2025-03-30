@@ -97,26 +97,3 @@ $colorLetra3: rgb(22, 143, 190);
     }
 }
 
-.proyectos{
-    background-color: $fondoPagina;
-    padding-bottom: 5vw;
-    .progreso{
-        margin-inline: 5vw;
-        background-color: $fondoPagina2;
-        padding: 3vw;
-        border-radius: 20px;
-        h3{
-            color: $colorLetra3;
-            font-family: $fuenteBold;
-        }
-        p{
-            color: $colorLetra2;
-            font-family: $fuenteNormal;
-        }
-        .progress{
-            .progress-bar{
-                font-family: $fuenteNormal;
-            }
-        }
-    }
-}
