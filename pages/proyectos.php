@@ -6,9 +6,9 @@ $proyectos = [
         "responsable" => "Maria Dolores",
         "fechaEntrega" => "00/00/0000",
         "fechaPago" => "28",
-        "estado" => "Atrasado",
-        "estado2" => "Atrasado",        
-        "pago" => "Q650.00"
+        "estado" => "Pagado",
+        "estado2" => "Pagado",        
+        "pago" => "--"
     ],
     [
         "nombreProyecto" => "Manejo de Redes - Personalizado",

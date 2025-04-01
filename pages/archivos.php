@@ -16,19 +16,19 @@
             <i class="fi fi-ss-document-signed"></i>
             <h3>Seguridad</h3>
             <p>Protección de datos, accesos</p>
-            <a href=""><button>Ver Documentos</button></a>
+            <a href="https://www.notion.so/SEGURIDAD-SMART-1c6383ae3d70801792e2f79b85cc8f53?pvs=4" target="_blank"><button>Ver Documentos</button></a>
         </div>
         <div class="categoria">
             <i class="fi fi-ss-document-signed"></i>
             <h3>Procedimientos</h3>
             <p>Flujos de trabajo</p>
-            <a href=""><button>Ver Documentos</button></a>
+            <a href="https://www.notion.so/PROCEDIMIENTOS-1c6383ae3d7080438375fd464acbe677?pvs=4" target="_blank"><button>Ver Documentos</button></a>
         </div>
         <div class="categoria">
             <i class="fi fi-ss-document-signed"></i>
             <h3>Guías</h3>
             <p>Software y plataformas</p>
-            <a href=""><button>Ver Documentos</button></a>
+            <a href="https://www.notion.so/GU-AS-1c6383ae3d70807a941ae30c30f3a29a?pvs=4" target="_blank"><button>Ver Documentos</button></a>
         </div>
     </div>
 </div>
@@ -36,5 +36,4 @@
 
 <div class="texto">
     <h4>El conocimiento nos impulsa más allá de las estrellas <span class="iconFoot"><img src="assets/img/estrella.png" alt=""></span></h4>
-
 </div>
