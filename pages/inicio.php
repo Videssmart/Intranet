@@ -45,39 +45,39 @@ $archivos = array_slice($archivos, 0, 3);
     <div class="modulos">
         <div class="modulosKpis">
             <span class="iconModulo"><i class="fi fi-bs-signal-alt-2"></i>
-                <h3>KPIs de Febrero</h3>
+                <h3>KPIs de Marzo</h3>
             </span>
             <ul class="modulosLista">
                 <li>
-                    <p>Negocios cerrados: <strong>02</strong></p>
+                    <p>Negocios cerrados: <strong>04</strong></p>
                 </li>
                 <li>
-                    <p>Satisfacción del cliente: <strong>5</strong></p>
+                    <p>Satisfacción del cliente: <strong>--</strong></p>
                 </li>
                 <li>
-                    <p>Captación: <strong>Q850.00</strong></p>
+                    <p>Captación: <strong>Q2,017.50</strong></p>
                 </li>
                 <li>
-                    <p>Ganancia: <strong>Q-345.45</strong></p>
+                    <p>Ganancia: <strong>Q268.16</strong></p>
                 </li>
             </ul>
         </div>
         <div class="modulosKpis">
             <span class="iconModulo"><i class="fi fi-bs-signal-alt-2"></i>
-                <h3>KPIs de Marzo</h3>
+                <h3>KPIs de Abril</h3>
             </span>
             <ul class="modulosLista">
                 <li>
                     <p>Negocios cerrados: <strong>--</strong></p>
                 </li>
                 <li>
-                    <p>Satisfacción del cliente: <strong>--</strong></p>
+                    <p>Calificación esperada: <strong>5.0</strong></p>
                 </li>
                 <li>
-                    <p>Captación: <strong>--</strong></p>
+                    <p>Meta captación: <strong>Q2,500.00</strong></p>
                 </li>
                 <li>
-                    <p>Ganancia: <strong>--</strong></p>
+                    <p>Meta ganancia: <strong>Q600.00</strong></p>
                 </li>
             </ul>
         </div>

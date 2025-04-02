@@ -5,20 +5,10 @@ $proyectos = [
         "cliente" => "Mrcbusservice",
         "responsable" => "Maria Dolores",
         "fechaEntrega" => "00/00/0000",
-        "fechaPago" => "28",
-        "estado" => "Pagado",
-        "estado2" => "Pagado",        
-        "pago" => "--"
-    ],
-    [
-        "nombreProyecto" => "Manejo de Redes - Personalizado",
-        "cliente" => "Gamaliel Hernandez",
-        "responsable" => "Maria Dolores",
-        "fechaEntrega" => "00/00/0000",
-        "fechaPago" => "14",
-        "estado" => "Pagado",
-        "estado2" => "Pagado",
-        "pago" => "--"
+        "fechaPago" => "30",
+        "estado" => "Activo",
+        "estado2" => "Activo",        
+        "pago" => "Q650.00"
     ],
     [
         "nombreProyecto" => "Manejo de Redes",
@@ -40,16 +30,6 @@ $proyectos = [
         "estado2" => "Activo",
         "pago" => "Q650.00"
     ],
-    [
-        "nombreProyecto" => "Video Investigación",
-        "cliente" => "Abner Popol",
-        "responsable" => "Maria Dolores",
-        "fechaEntrega" => "24/03/2025",
-        "fechaPago" => "24/03/2025",
-        "estado" => "Pagado",
-        "estado2" => "Pagado",
-        "pago" => "--"
-    ]
 ]
 ?>
 <div class="bannerProyectos">
