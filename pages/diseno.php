@@ -2,18 +2,18 @@
 
 $recursos = [
     [
-        "documento" => "uploads/DG1.pdf#toolbar=0",
+        "documento" => "uploads/diseñoWeb.pdf#toolbar=0",
         "nombreDoc" => "Diseño Web",
-        "download" => "uploads/DG1.pdf",
-        "descarga" => "DG1.pdf",
-        "vistaPrevia" => "uploads/DG1.pdf"
+        "download" => "uploads/diseñoWeb.pdf",
+        "descarga" => "diseñoWeb.pdf",
+        "vistaPrevia" => "uploads/diseñoWeb.pdf"
     ],
     [
-        "documento" => "uploads/DG2.pdf#toolbar=0",
+        "documento" => "uploads/paquetesRedesSociales.pdf#toolbar=0",
         "nombreDoc" => "Planes de Redes Sociales",
-        "download" => "uploads/DG2.pdf",
-        "descarga" => "DG2.pdf",
-        "vistaPrevia" => "uploads/DG2.pdf"
+        "download" => "uploads/paquetesRedesSociales.pdf",
+        "descarga" => "paquetesRedesSociales.pdf",
+        "vistaPrevia" => "uploads/paquetesRedesSociales.pdf"
     ],
     [
         "documento" => "uploads/portafolioDiseño.pdf#toolbar=0",
