@@ -56,7 +56,7 @@ $recursos = [
     <div class="descargas">
         <h3><span><img src="assets/img/btns.png" alt=""></span> Manual de Artes Videss Smart</h3>
         <p>Aquí encontrarás las pautas para el uso correcto del logotipo, restricciones y combinaciones de color permitidas para mantener la consistencia de nuestra marca.</p>
-        <a href="uploads/instructivoDiseno.docx" download="instructivoDiseno.docx"><button class="download-button"><i class="fi fi-rr-download"></i>Descargar Manual de Marca</button></a>
+        <a href="uploads/instructivoDiseno.pdf" download="instructivoDiseno.pdf"><button class="download-button"><i class="fi fi-rr-download"></i>Descargar Manual de Marca</button></a>
     </div>
 </div>
 
