@@ -32,6 +32,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php?seccion=diseno">Diseño Grafico</a></li>
+            <li><a class="dropdown-item" href="index.php?seccion=locucion">Estudio Smart</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

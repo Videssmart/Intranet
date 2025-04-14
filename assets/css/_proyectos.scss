@@ -13,8 +13,8 @@ $fuenteBold: garet-bold;
 $fuenteNormal: garet-normal;
 $fondoBoton: rgb(45, 130, 241);
 $fondoBotonHover: rgb(25, 25, 233);
-$fondoPagina: #111827;
-$fondoPagina2: #19212e;
+$fondoPagina: #131312;
+$fondoOscuroClaro: rgb(41, 41, 41);
 $colorExtras: #182b4b;
 $colorVineta: rgb(177, 50, 182);
 $fondoVinetaHover: rgb(120, 40, 122);
@@ -103,7 +103,7 @@ $estados: (
 }
 
 .listado {
-    background-color: $fondoPagina2;
+    background-color: $fondoOscuroClaro;
     padding-block: 5vw;
     display: flex;
     flex-direction: column;
@@ -239,7 +239,7 @@ $estados: (
 
     .progreso {
         margin-inline: 5vw;
-        background-color: $fondoPagina2;
+        background-color: $fondoOscuroClaro;
         padding: 3vw;
         border-radius: 20px;
         width: 80vw;

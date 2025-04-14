@@ -105,7 +105,7 @@ $archivos = array_slice($archivos, 0, 3);
     <h2 class="title"><span class="iconTitle"><img src="assets/img/novedad.png" alt=""></span>Novedades en los Procesos</h2>
     <div class="card">
         <div class="card-header">
-            <img src="assets/novedadesImg/banrural.png" alt="">
+            <img src="assets/novedadesImg/pago.png" alt="">
         </div>
         <div class="card-body">
             <h5 class="card-title">Conoce como mejoramos nuestros procesos</h5>

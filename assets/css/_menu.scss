@@ -11,7 +11,7 @@ $colorLetra2: rgb(0, 0, 0);
 $fuenteBold: garet-bold;
 $fuenteNormal: garet-normal;
 $colorLetraHover: rgb(231, 74, 74);
-$fondoPagina2: #19212e;
+$fondoPagina: #131312;
 .navbar{
     position: absolute !important; 
     .container-fluid{
@@ -39,7 +39,7 @@ $fondoPagina2: #19212e;
             }
             .dropdown{
                 .dropdown-menu{
-                    background-color: $fondoPagina2;
+                    background-color: $fondoPagina;
                     li{
                         a{
                             color: $colorLetra;

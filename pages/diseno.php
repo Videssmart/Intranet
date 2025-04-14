@@ -33,7 +33,7 @@ $recursos = [
 ]
 
 ?>
-
+ 
 
 <div class="bannerGrafico">
     <h2>Centro de Artes Gráficas: Creatividad sin Límites</h2>

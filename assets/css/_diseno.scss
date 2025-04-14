@@ -5,14 +5,14 @@
 @font-face {
     font-family: garet-bold;
     src: url(../fuentes/Garet-Heavy.otf);
-}
+} 
 $colorLetra: rgb(255, 255, 255);
 $fuenteBold: garet-bold;
 $fuenteNormal: garet-normal;
 $fondoBoton: rgb(45, 130, 241);
 $fondoBotonHover: rgb(25, 25, 233);
-$fondoPagina: #111827;
-$fondoPagina2: #19212e;
+$fondoPagina: #131312;
+$fondoOscuroClaro: rgb(41, 41, 41);
 $colorExtras: #182b4b;
 $descargar: rgb(3, 155, 3);
 $cuadros: (
@@ -22,7 +22,7 @@ $cuadros: (
     4: "After Effects"
 );
 .bannerGrafico{
-    background-image: url(../img/fondoDesign.jpg);
+    background-image: url(../img/bannerDesign.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -100,11 +100,11 @@ $cuadros: (
 }
 
 .lineamientos{
-    background-color: $fondoPagina2;
+    background-color: $fondoPagina;
     padding-bottom: 6vw;
    .descargas{
     margin-inline: 5vw;
-    background-color: $fondoPagina;
+    background-color: $fondoOscuroClaro;
     color: $colorLetra;
     padding: 3vw;
     border-radius: 10px;
@@ -144,7 +144,7 @@ $cuadros: (
 
 
 .recursos{
-    background-color: $fondoPagina;
+    background-color: $fondoOscuroClaro;
     padding-bottom: 7vw;
     .archivos{
         display: grid;
@@ -154,9 +154,9 @@ $cuadros: (
         gap: 20px;
         .archivo{
             width: 90%;
-            background-color: $fondoPagina2;
+            background-color: $fondoPagina;
             .textArchivo{
-                background-color: $fondoPagina2;
+                background-color: $fondoPagina;
                 padding: 1vw 1vw 1vw 1vw;
                 height: 10vw;
                 h3{
@@ -192,14 +192,14 @@ $cuadros: (
 
 
 .preguntasDiseno{
-    background-color: $fondoPagina2;
+    background-color: $fondoPagina;
     padding-bottom: 5vw;
     .accordion{
         padding-inline: 5vw;
         .accordion-item{
             .accordion-header{
                 .accordion-button{
-                    background-color: $fondoBoton;
+                    background-color: $fondoOscuroClaro;
                     font-family: $fuenteBold;
                     color: $colorLetra;
                     font-size: 2vw;

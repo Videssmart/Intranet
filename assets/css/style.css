@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: garet-normal;
   src: url(../fuentes/Garet-Book.otf); }
@@ -5,7 +6,7 @@
   font-family: garet-bold;
   src: url(../fuentes/Garet-Heavy.otf); }
 .bannerInicio {
-  background-image: url(../img/bannerIntranet.jpg);
+  background-image: url(../img/bannerInicio.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -26,7 +27,7 @@
     font-size: 2vw; }
 
 .documentosRecientes {
-  background-color: #111827;
+  background-color: #131312;
   padding-block: 5vw;
   text-align: center;
   padding-inline: 2vw; }
@@ -40,7 +41,7 @@
     .documentosRecientes .documentos .archivo {
       width: 100%; }
       .documentosRecientes .documentos .archivo p {
-        background-color: #19212e;
+        background-color: #292929;
         color: white;
         font-family: garet-normal;
         font-weight: 700;
@@ -50,7 +51,7 @@
         border-radius: 10px 10px 0 0; }
 
 .moduloProductividad {
-  background-color: #19212e; }
+  background-color: #292929; }
   .moduloProductividad .modulos {
     display: grid;
     justify-items: center;
@@ -59,7 +60,7 @@
     grid-template-columns: repeat(3, 1fr); }
     .moduloProductividad .modulos .modulosKpis {
       color: white;
-      background-color: #111827;
+      background-color: #131312;
       width: 90%;
       padding: 40px 0 10px 0;
       border-radius: 20px;
@@ -80,12 +81,12 @@
         padding: 0; }
 
 .novedades {
-  background-color: #111827; }
+  background-color: #131312; }
   .novedades h2 {
     margin: 0; }
   .novedades .card {
     width: 100%;
-    background-color: #111827;
+    background-color: #292929;
     border: none;
     margin-top: 4vw;
     padding-bottom: 4vw; }
@@ -106,14 +107,14 @@
         font-size: 2vw; }
 
 .soporte {
-  background-color: #19212e; }
+  background-color: #131312; }
   .soporte .container .row .col .accordion .accordion-item .accordion-header .accordion-button {
     background-color: #182b4b;
     color: white; }
     .soporte .container .row .col .accordion .accordion-item .accordion-header .accordion-button:after {
       color: white; }
   .soporte .container .row .col .accordion .accordion-item .accordion-collapse {
-    background-color: #111827;
+    background-color: #131312;
     color: white; }
   .soporte .container .row .col .mb-3 {
     position: relative;
@@ -124,7 +125,7 @@
       font-size: 3vw; }
     .soporte .container .row .col .mb-3 .form-control {
       height: 20vw;
-      background-color: #141825;
+      background-color: #292929;
       color: white;
       font-family: garet-normal;
       font-weight: 700; }
@@ -159,7 +160,7 @@
         .navbar .container-fluid .collapse ul li a:hover {
           color: #e74a4a; }
     .navbar .container-fluid .collapse .dropdown .dropdown-menu {
-      background-color: #19212e; }
+      background-color: #131312; }
       .navbar .container-fluid .collapse .dropdown .dropdown-menu li a {
         color: white;
         font-family: garet-normal;
@@ -174,7 +175,7 @@
   font-family: garet-bold;
   src: url(../fuentes/Garet-Heavy.otf); }
 .bannerManuales {
-  background-image: url(../img/bannerProtocolos.jpg);
+  background-image: url(../img/bannerManuales.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -196,7 +197,7 @@
     font-weight: 700; }
 
 .categoriasManuales {
-  background-color: #19212e;
+  background-color: #131312;
   padding-bottom: 5vw; }
   .categoriasManuales .categorias {
     display: grid;
@@ -204,7 +205,7 @@
     align-items: center;
     grid-template-columns: repeat(4, 1fr); }
     .categoriasManuales .categorias .categoria {
-      background-color: #111827;
+      background-color: #292929;
       color: white;
       width: 90%;
       text-align: center;
@@ -245,7 +246,7 @@
         transform: scale(1.07); }
 
 .texto {
-  background-color: #111827;
+  background-color: #131312;
   padding: 4vw; }
   .texto h4 {
     text-align: center;
@@ -330,7 +331,7 @@
   font-family: garet-bold;
   src: url(../fuentes/Garet-Heavy.otf); }
 .bannerGrafico {
-  background-image: url(../img/fondoDesign.jpg);
+  background-image: url(../img/bannerDesign.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -397,11 +398,11 @@
         content: "After Effects"; }
 
 .lineamientos {
-  background-color: #19212e;
+  background-color: #131312;
   padding-bottom: 6vw; }
   .lineamientos .descargas {
     margin-inline: 5vw;
-    background-color: #111827;
+    background-color: #292929;
     color: white;
     padding: 3vw;
     border-radius: 10px; }
@@ -428,7 +429,7 @@
         margin-right: 5px; }
 
 .recursos {
-  background-color: #111827;
+  background-color: #292929;
   padding-bottom: 7vw; }
   .recursos .archivos {
     display: grid;
@@ -438,9 +439,9 @@
     gap: 20px; }
     .recursos .archivos .archivo {
       width: 90%;
-      background-color: #19212e; }
+      background-color: #131312; }
       .recursos .archivos .archivo .textArchivo {
-        background-color: #19212e;
+        background-color: #131312;
         padding: 1vw 1vw 1vw 1vw;
         height: 10vw; }
         .recursos .archivos .archivo .textArchivo h3 {
@@ -463,12 +464,12 @@
             color: #039b03; }
 
 .preguntasDiseno {
-  background-color: #19212e;
+  background-color: #131312;
   padding-bottom: 5vw; }
   .preguntasDiseno .accordion {
     padding-inline: 5vw; }
     .preguntasDiseno .accordion .accordion-item .accordion-header .accordion-button {
-      background-color: #2d82f1;
+      background-color: #292929;
       font-family: garet-bold;
       color: white;
       font-size: 2vw; }
@@ -501,7 +502,7 @@
     font-weight: 700; }
 
 .resumenGeneral {
-  background-color: #111827;
+  background-color: #131312;
   padding-block: 5vw; }
   .resumenGeneral h2 {
     text-align: center;
@@ -539,7 +540,7 @@
         font-size: 1.9vw; }
 
 .listado {
-  background-color: #19212e;
+  background-color: #292929;
   padding-block: 5vw;
   display: flex;
   flex-direction: column;
@@ -559,7 +560,7 @@
         color: #dd5;
         font-family: garet-bold; }
     .listado .rwd-table .trBody {
-      background-color: #111827; }
+      background-color: #131312; }
       .listado .rwd-table .trBody td {
         color: garet-normal;
         font-weight: 700;
@@ -622,7 +623,7 @@
     color: #dd5; }
 
 .proyectos {
-  background-color: #111827;
+  background-color: #131312;
   padding-bottom: 5vw;
   display: flex;
   flex-direction: column;
@@ -630,7 +631,7 @@
   align-items: center; }
   .proyectos .progreso {
     margin-inline: 5vw;
-    background-color: #19212e;
+    background-color: #292929;
     padding: 3vw;
     border-radius: 20px;
     width: 80vw; }
@@ -1037,6 +1038,334 @@
 @font-face {
   font-family: garet-bold;
   src: url(../fuentes/Garet-Heavy.otf); }
+.titleDesign2 {
+  font-family: garet-bold;
+  color: white;
+  margin-left: 1vw;
+  font-size: 2vw; }
+
+.locucionBanner {
+  background-color: #131312;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .locucionBanner .banner {
+    background: #745fa3;
+    background: linear-gradient(90deg, #6a50a1 0%, #5d0aa6 20%, #51168d 45%, #2d4d92 70%, #072357 100%);
+    width: 98%;
+    height: 20vw;
+    padding: 2.3vw 2.3vw 2.3vw 2.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    border-radius: 20px; }
+    .locucionBanner .banner h2 {
+      color: white;
+      font-family: garet-bold;
+      font-size: 2.9vw; }
+    .locucionBanner .banner p {
+      color: #cbd0dd;
+      font-family: garet-normal;
+      font-weight: 700;
+      font-size: 1.3vw; }
+    .locucionBanner .banner .buttonsBanner {
+      display: flex;
+      gap: 20px; }
+      .locucionBanner .banner .buttonsBanner .buttonScript {
+        background-color: rgba(145, 38, 216, 0.808);
+        border: none;
+        padding: 1vw 2vw;
+        font-family: garet-normal;
+        font-weight: 700;
+        border-radius: 5px; }
+      .locucionBanner .banner .buttonsBanner .buttonManual {
+        background-color: rgba(106, 113, 117, 0.274);
+        border: solid 1px white;
+        color: white;
+        padding: 1vw 2vw;
+        font-family: garet-normal;
+        font-weight: 700;
+        border-radius: 5px; }
+
+.guiaRapida {
+  background-color: #131312; }
+  .guiaRapida .guiasCards {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3vw 2vw;
+    padding-bottom: 6vw; }
+    .guiaRapida .guiasCards .guiaCard {
+      border: solid 1px white;
+      padding-block: 3vw;
+      padding-inline: 1.5vw;
+      height: 20vw;
+      border-radius: 10px; }
+      .guiaRapida .guiasCards .guiaCard h4 {
+        font-family: garet-bold;
+        color: white;
+        font-size: 1.7vw; }
+      .guiaRapida .guiasCards .guiaCard .p1 {
+        font-family: garet-normal;
+        color: #cbd0dd; }
+      .guiaRapida .guiasCards .guiaCard .p2 {
+        font-family: garet-normal;
+        color: white; }
+      .guiaRapida .guiasCards .guiaCard button {
+        margin-top: 1vw;
+        border: none;
+        background-color: transparent;
+        color: #0d71e4; }
+
+.scriptsModelosVoz {
+  background-color: #131312; }
+  .scriptsModelosVoz .menuModelos {
+    padding-top: 3vw; }
+    .scriptsModelosVoz .menuModelos .modelos {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      list-style-type: none;
+      gap: 45px;
+      background-color: #1b1b1b;
+      color: #cbd0dd;
+      margin-inline: 2vw;
+      padding-block: 1vw;
+      border-radius: 10px; }
+      .scriptsModelosVoz .menuModelos .modelos .categoria {
+        font-family: garet-normal;
+        font-weight: 700; }
+  .scriptsModelosVoz .cardsModelos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    padding-block: 5vw;
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 3vw; }
+    .scriptsModelosVoz .cardsModelos .cardModelo {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border: solid 1px white;
+      padding: 2vw;
+      background-color: #1b1b1b;
+      border-radius: 10px; }
+      .scriptsModelosVoz .cardsModelos .cardModelo h4 {
+        font-family: garet-bold;
+        color: white;
+        font-size: 2vw;
+        margin: 0; }
+      .scriptsModelosVoz .cardsModelos .cardModelo p {
+        font-family: garet-normal;
+        color: #cbd0dd; }
+      .scriptsModelosVoz .cardsModelos .cardModelo .descModelo {
+        background-color: #292929;
+        padding: 0.7vw;
+        border-radius: 10px;
+        margin-bottom: 2vw; }
+        .scriptsModelosVoz .cardsModelos .cardModelo .descModelo p {
+          margin: 0;
+          font-size: 1.1vw; }
+      .scriptsModelosVoz .cardsModelos .cardModelo button {
+        border: none;
+        padding-block: .5vw;
+        border-radius: 5px;
+        font-family: garet-bold;
+        font-size: 1.2vw; }
+      .scriptsModelosVoz .cardsModelos .cardModelo .referencia {
+        border: solid 1px rgba(145, 38, 216, 0.808);
+        background-color: #292929;
+        color: white; }
+      .scriptsModelosVoz .cardsModelos .cardModelo .descargarScript {
+        background-color: rgba(145, 38, 216, 0.808); }
+
+.produccion {
+  background-color: #131312; }
+  .produccion .contenedorProduccion {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 5vw; }
+    .produccion .contenedorProduccion .guiasFormatos {
+      padding-left: 2vw;
+      display: flex;
+      flex-direction: column;
+      gap: 30px; }
+      .produccion .contenedorProduccion .guiasFormatos .instruccionesGrabacion {
+        border: solid 1px white;
+        width: 45vw;
+        padding: 3vw;
+        border-radius: 10px;
+        background-color: #1b1b1b;
+        display: flex;
+        flex-direction: column; }
+        .produccion .contenedorProduccion .guiasFormatos .instruccionesGrabacion h4 {
+          font-family: garet-bold;
+          color: white;
+          font-size: 2vw; }
+        .produccion .contenedorProduccion .guiasFormatos .instruccionesGrabacion p {
+          font-family: garet-normal;
+          color: #cbd0dd;
+          font-size: 1vw; }
+        .produccion .contenedorProduccion .guiasFormatos .instruccionesGrabacion .listInstrucciones {
+          padding-block: 1vw;
+          font-family: garet-normal;
+          list-style: none;
+          position: relative;
+          padding: 1vw; }
+          .produccion .contenedorProduccion .guiasFormatos .instruccionesGrabacion .listInstrucciones li {
+            color: white;
+            font-size: 1vw; }
+            .produccion .contenedorProduccion .guiasFormatos .instruccionesGrabacion .listInstrucciones li:before {
+              content: "•";
+              position: absolute;
+              color: #c52828;
+              left: 0; }
+        .produccion .contenedorProduccion .guiasFormatos .instruccionesGrabacion button {
+          border: none;
+          padding-block: .6vw;
+          border-radius: 5px;
+          background-color: #c52828;
+          font-family: garet-bold; }
+      .produccion .contenedorProduccion .guiasFormatos .formatosEntrega {
+        border: solid 1px white;
+        width: 45vw;
+        padding: 3vw;
+        border-radius: 10px;
+        background-color: #1b1b1b;
+        display: flex;
+        flex-direction: column; }
+        .produccion .contenedorProduccion .guiasFormatos .formatosEntrega h4 {
+          font-family: garet-bold;
+          color: white;
+          font-size: 2vw; }
+        .produccion .contenedorProduccion .guiasFormatos .formatosEntrega p {
+          font-family: garet-normal;
+          color: #cbd0dd;
+          font-size: 1vw; }
+        .produccion .contenedorProduccion .guiasFormatos .formatosEntrega .formatos .listFormatos {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          list-style-type: none;
+          padding: 0;
+          padding-block: 2vw; }
+          .produccion .contenedorProduccion .guiasFormatos .formatosEntrega .formatos .listFormatos .formato {
+            background-color: #292929;
+            padding: 1vw;
+            border-radius: 5px; }
+            .produccion .contenedorProduccion .guiasFormatos .formatosEntrega .formatos .listFormatos .formato h5 {
+              font-family: garet-bold;
+              color: #0d71e4; }
+        .produccion .contenedorProduccion .guiasFormatos .formatosEntrega button {
+          border: solid 1px #0d71e4;
+          padding-block: .5vw;
+          border-radius: 5px;
+          background-color: #292929;
+          font-family: garet-bold;
+          color: white; }
+    .produccion .contenedorProduccion .cotizacion {
+      padding-right: 2vw; }
+      .produccion .contenedorProduccion .cotizacion .solicitarCotizacion {
+        border: solid 1px white;
+        width: 45vw;
+        padding: 3vw;
+        border-radius: 10px;
+        background-color: #1b1b1b;
+        display: flex;
+        flex-direction: column; }
+        .produccion .contenedorProduccion .cotizacion .solicitarCotizacion h4 {
+          font-family: garet-bold;
+          color: white;
+          font-size: 2vw; }
+        .produccion .contenedorProduccion .cotizacion .solicitarCotizacion p {
+          font-family: garet-normal;
+          color: #cbd0dd;
+          font-size: 1vw; }
+        .produccion .contenedorProduccion .cotizacion .solicitarCotizacion .formularioCotizacion form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding-block: 2.4vw; }
+          .produccion .contenedorProduccion .cotizacion .solicitarCotizacion .formularioCotizacion form label {
+            font-family: garet-normal;
+            color: #cbd0dd; }
+          .produccion .contenedorProduccion .cotizacion .solicitarCotizacion .formularioCotizacion form input, .produccion .contenedorProduccion .cotizacion .solicitarCotizacion .formularioCotizacion form textarea, .produccion .contenedorProduccion .cotizacion .solicitarCotizacion .formularioCotizacion form select {
+            margin-bottom: 2vw;
+            border: solid 1px #0d71e4;
+            padding: .7vw;
+            background-color: rgba(106, 113, 117, 0.274);
+            border-radius: 5px;
+            color: #cbd0dd; }
+          .produccion .contenedorProduccion .cotizacion .solicitarCotizacion .formularioCotizacion form select {
+            color: #cbd0dd; }
+            .produccion .contenedorProduccion .cotizacion .solicitarCotizacion .formularioCotizacion form select option {
+              background-color: #131312; }
+          .produccion .contenedorProduccion .cotizacion .solicitarCotizacion .formularioCotizacion form textarea {
+            height: 15vw; }
+        .produccion .contenedorProduccion .cotizacion .solicitarCotizacion button {
+          border: none;
+          padding-block: .7vw;
+          border-radius: 5px;
+          background-color: rgba(145, 38, 216, 0.808);
+          font-family: garet-bold; }
+
+.recursosLocucion {
+  background-color: #131312;
+  padding-bottom: 7vw; }
+  .recursosLocucion .archivos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-block: 2vw; }
+    .recursosLocucion .archivos .archivo {
+      width: 90%;
+      background-color: #292929; }
+      .recursosLocucion .archivos .archivo .textArchivo {
+        background-color: #292929;
+        padding: 1vw 1vw 1vw 1vw;
+        height: 10vw; }
+        .recursosLocucion .archivos .archivo .textArchivo h3 {
+          color: white;
+          font-family: garet-bold;
+          font-size: 1.9vw; }
+        .recursosLocucion .archivos .archivo .textArchivo ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0;
+          padding-inline: 1vw;
+          position: relative;
+          top: 3vw; }
+          .recursosLocucion .archivos .archivo .textArchivo ul li:first-child a {
+            color: rgba(145, 38, 216, 0.808); }
+          .recursosLocucion .archivos .archivo .textArchivo ul li a {
+            text-decoration: none;
+            color: #039b03; }
+
+.preguntasFrecuentes {
+  background-color: #131312; }
+  .preguntasFrecuentes .container .row .col .accordion {
+    padding-block: 3vw;
+    border: none; }
+    .preguntasFrecuentes .container .row .col .accordion .accordion-item {
+      background-color: #292929;
+      color: white; }
+
+@font-face {
+  font-family: garet-normal;
+  src: url(../fuentes/Garet-Book.otf); }
+@font-face {
+  font-family: garet-bold;
+  src: url(../fuentes/Garet-Heavy.otf); }
 body, * {
   margin: 0;
   padding: 0;
@@ -1049,7 +1378,7 @@ body {
   display: none !important; }
 
 a.buttons button {
-  background-color: #2d82f1;
+  background-color: rgba(145, 38, 216, 0.808);
   border: none;
   padding: 10px 5px 10px 5px;
   border-radius: 50px;

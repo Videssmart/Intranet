@@ -1,0 +1,427 @@
+@font-face {
+    font-family: garet-normal;
+    src: url(../fuentes/Garet-Book.otf);
+}
+
+@font-face {
+    font-family: garet-bold;
+    src: url(../fuentes/Garet-Heavy.otf);
+}
+
+$colorLetra: rgb(255, 255, 255);
+$fuenteBold: garet-bold;
+$fuenteNormal: garet-normal;
+$fondoBoton: rgba(145, 38, 216, 0.808);
+$fondoBoton2: rgba(106, 113, 117, 0.274);
+$fondoPagina: #131312;
+$fondoExtras: rgb(27, 27, 27);
+$fondoOscuroClaro: rgb(41, 41, 41); 
+$colorExtras: #0d71e4;
+$colorLetraSoporte: rgb(203, 208, 221);
+$colorVinetas: rgb(197, 40, 40);
+
+.titleDesign2{
+    font-family: $fuenteBold;
+    color: $colorLetra;
+    margin-left: 1vw;
+    font-size: 2vw;
+}
+
+.locucionBanner {
+    background-color: $fondoPagina;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .banner {
+        background: #745fa3;
+        background: linear-gradient(90deg, rgb(106, 80, 161) 0%, rgba(93, 10, 166, 1) 20%, rgb(81, 22, 141) 45%, rgb(45, 77, 146) 70%, rgba(7, 35, 87, 1) 100%);
+        width: 98%;
+        height: 20vw;
+        padding: 2.3vw 2.3vw 2.3vw 2.3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+        border-radius: 20px;
+        h2{
+            color: $colorLetra;
+            font-family: $fuenteBold;
+            font-size: 2.9vw;
+        }
+        p{
+            color: $colorLetraSoporte;
+            font-family: $fuenteNormal;
+            font-weight: 700;
+            font-size: 1.3vw;
+        }
+        .buttonsBanner{
+            display: flex;
+            gap: 20px;
+            .buttonScript{
+                background-color: $fondoBoton;
+                border: none;
+                padding: 1vw 2vw;
+                font-family: $fuenteNormal;
+                font-weight: 700;
+                border-radius: 5px;
+            }
+            .buttonManual{
+                background-color: $fondoBoton2;
+                border: solid 1px $colorLetra;
+                color: $colorLetra;
+                padding: 1vw 2vw;
+                font-family: $fuenteNormal;
+                font-weight: 700;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.guiaRapida{
+    background-color: $fondoPagina;
+    .guiasCards{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3vw 2vw;
+        padding-bottom: 6vw;
+        .guiaCard{
+            border: solid 1px $colorLetra;
+            padding-block: 3vw;
+            padding-inline: 1.5vw;
+            height: 20vw;
+            border-radius: 10px;
+            h4{
+                font-family: $fuenteBold;
+                color: $colorLetra;
+                font-size: 1.7vw;
+            }
+            .p1{
+                font-family: $fuenteNormal;
+                color: $colorLetraSoporte;
+            }
+            .p2{
+                font-family: $fuenteNormal;
+                color: $colorLetra;
+            }
+            button{
+                margin-top: 1vw;
+                border: none;
+                background-color: transparent;
+                color: $colorExtras;
+            }
+        }
+    }
+}
+
+
+.scriptsModelosVoz{
+    background-color: $fondoPagina;
+    .menuModelos{
+        padding-top: 3vw;
+        .modelos{ 
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            list-style-type: none;
+            gap: 45px;
+            background-color: $fondoExtras;
+            color: $colorLetraSoporte;
+            margin-inline: 2vw;
+            padding-block: 1vw;
+            border-radius: 10px;
+            .categoria{
+                font-family: $fuenteNormal;
+                font-weight: 700;
+            }
+        }
+    }
+    .cardsModelos{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        gap: 30px;
+        padding-block: 5vw;
+        grid-template-columns: repeat(3, 1fr);
+        padding-inline: 3vw;
+        .cardModelo{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border: solid 1px $colorLetra;
+            padding: 2vw;
+            background-color: $fondoExtras;
+            border-radius: 10px;
+            h4{
+                font-family: $fuenteBold;
+                color: $colorLetra;
+                font-size: 2vw;
+                margin: 0;
+            }
+            p{
+                font-family: $fuenteNormal;
+                color: $colorLetraSoporte;
+            }
+            .descModelo{
+                background-color: $fondoOscuroClaro;
+                padding: 0.7vw;
+                border-radius: 10px;
+                p{
+                    margin: 0;
+                    font-size: 1.1vw;
+                }
+                margin-bottom: 2vw;
+            }
+            button{
+                border: none;
+                padding-block: .5vw;
+                border-radius: 5px;
+                font-family: $fuenteBold;
+                font-size: 1.2vw;
+            }
+            .referencia{
+                border: solid 1px $fondoBoton;
+                background-color: $fondoOscuroClaro;
+                color: $colorLetra;
+            }
+            .descargarScript{
+                background-color: $fondoBoton;
+            }
+        }
+    }
+}
+
+.produccion{
+    background-color: $fondoPagina;
+    .contenedorProduccion{
+        display: flex;
+        justify-content: space-between;
+        padding-block: 5vw;
+        .guiasFormatos{
+            padding-left: 2vw;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .instruccionesGrabacion{
+                border: solid 1px $colorLetra;
+                width: 45vw;
+                padding: 3vw;
+                border-radius: 10px;
+                background-color: $fondoExtras;
+                display: flex;
+                flex-direction: column;
+                h4{
+                    font-family: $fuenteBold;
+                    color: $colorLetra;
+                    font-size: 2vw;
+                }
+                p{
+                    font-family: $fuenteNormal;
+                    color: $colorLetraSoporte;
+                    font-size: 1vw;
+                }
+                .listInstrucciones{
+                    padding-block: 1vw;
+                    font-family: $fuenteNormal;
+                    list-style: none;
+                    position: relative;
+                    padding: 1vw;
+                    li{
+                        &:before{
+                            content: "•";
+                            position: absolute;
+                            color: $colorVinetas;
+                            left: 0;
+                        }
+                        color: $colorLetra;
+                        font-size: 1vw;
+                    }
+                }
+                button{
+                    border: none;
+                    padding-block: .6vw;
+                    border-radius: 5px;
+                    background-color: $colorVinetas;
+                    font-family: $fuenteBold;
+                }
+            }
+            .formatosEntrega{
+                border: solid 1px $colorLetra;
+                width: 45vw;
+                padding: 3vw;
+                border-radius: 10px;
+                background-color: $fondoExtras;
+                display: flex;
+                flex-direction: column;
+                h4{
+                    font-family: $fuenteBold;
+                    color: $colorLetra;
+                    font-size: 2vw;
+                }
+                p{
+                    font-family: $fuenteNormal;
+                    color: $colorLetraSoporte;
+                    font-size: 1vw;
+                }
+                .formatos{
+                    .listFormatos{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        list-style-type: none;
+                        padding: 0;
+                        padding-block: 2vw;
+                        .formato{
+                            background-color: $fondoOscuroClaro;
+                            padding: 1vw;
+                            border-radius: 5px;
+                            h5{
+                                font-family: $fuenteBold;
+                                color: $colorExtras;
+                            }
+                        }
+                    }
+
+                }
+                button{
+                    border: solid 1px $colorExtras;
+                    padding-block: .5vw;
+                    border-radius: 5px;
+                    background-color: $fondoOscuroClaro;
+                    font-family: $fuenteBold;
+                    color: $colorLetra;
+                }
+            }
+        }
+        .cotizacion{
+            padding-right: 2vw;
+            .solicitarCotizacion{
+                border: solid 1px $colorLetra;
+                width: 45vw;
+                padding: 3vw;
+                border-radius: 10px;
+                background-color: $fondoExtras;
+                display: flex;
+                flex-direction: column;
+                h4{
+                    font-family: $fuenteBold;
+                    color: $colorLetra;
+                    font-size: 2vw;
+                }
+                p{
+                    font-family: $fuenteNormal;
+                    color: $colorLetraSoporte;
+                    font-size: 1vw;
+                }
+                .formularioCotizacion{
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        padding-block: 2.4vw;
+                        label{
+                            font-family: $fuenteNormal;
+                            color: $colorLetraSoporte;
+                        }
+                        input, textarea, select{
+                            margin-bottom: 2vw;
+                            border: solid 1px $colorExtras;
+                            padding: .7vw;
+                            background-color: $fondoBoton2;
+                            border-radius: 5px;
+                            color: $colorLetraSoporte;
+                        }
+                        select{
+                            color: $colorLetraSoporte;
+                            option{
+                                background-color: $fondoPagina;
+                            }
+                        }
+                        textarea{
+                            height: 15vw;
+                        }
+                    }
+
+                }
+                button{
+                    border: none;
+                    padding-block: .7vw;
+                    border-radius: 5px;
+                    background-color: $fondoBoton;
+                    font-family: $fuenteBold;
+                }
+            }
+        }
+    }
+}
+
+.recursosLocucion{
+    background-color: $fondoPagina;
+    padding-bottom: 7vw;
+    .archivos{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding-block: 2vw;
+        .archivo{
+            width: 90%;
+            background-color: $fondoOscuroClaro;
+            .textArchivo{
+                background-color: $fondoOscuroClaro;
+                padding: 1vw 1vw 1vw 1vw;
+                height: 10vw;
+                h3{
+                    color: $colorLetra;
+                    font-family: $fuenteBold;
+                    font-size: 1.9vw;
+                }
+                ul{
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0;
+                    padding-inline: 1vw;
+                    position: relative;
+                    top: 3vw;
+                    li:first-child{
+                        a{
+                            color: $fondoBoton;
+                        }
+                    }
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: $descargar;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+.preguntasFrecuentes{
+    background-color: $fondoPagina;
+    .container{
+        .row{
+            .col{
+                .accordion{
+                    padding-block: 3vw;
+                    border: none;
+                    .accordion-item{
+                        background-color: $fondoOscuroClaro;
+                        color: $colorLetra;
+                    }
+                }
+            }
+        }
+    }
+}

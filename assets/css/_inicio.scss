@@ -11,12 +11,12 @@ $fuenteBold: garet-bold;
 $fuenteNormal: garet-normal;
 $fondoBoton: rgb(45, 130, 241);
 $fondoBotonHover: rgb(25, 25, 233);
-$fondoPagina: #111827;
-$fondoPagina2: #19212e;
+$fondoPagina: #131312;
+$fondoOscuroClaro: rgb(41, 41, 41); 
 $colorExtras: #182b4b;
  
 .bannerInicio{
-    background-image: url(../img/bannerIntranet.jpg);
+    background-image: url(../img/bannerInicio.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,7 +57,7 @@ $colorExtras: #182b4b;
         .archivo{
             width: 100%;
             p{
-                background-color: $fondoPagina2;
+                background-color: $fondoOscuroClaro;
                 color: $colorLetra;
                 font-family: $fuenteNormal;
                 font-weight: 700;
@@ -71,7 +71,7 @@ $colorExtras: #182b4b;
 }
 
 .moduloProductividad{
-    background-color: $fondoPagina2;
+    background-color: $fondoOscuroClaro;
 
     .modulos{
         display: grid;
@@ -117,7 +117,7 @@ $colorExtras: #182b4b;
     }
     .card{
         width: 100%;
-        background-color: $fondoPagina;
+        background-color: $fondoOscuroClaro;
         border: none;
         margin-top: 4vw;
         padding-bottom: 4vw;
@@ -148,7 +148,7 @@ $colorExtras: #182b4b;
 
 
 .soporte{
-    background-color: $fondoPagina2;
+    background-color: $fondoPagina;
     .container{
         .row{
             .col{
@@ -179,7 +179,7 @@ $colorExtras: #182b4b;
                     }
                     .form-control{
                         height: 20vw;
-                        background-color: rgb(20, 24, 37);
+                        background-color: $fondoOscuroClaro;
                         color: $colorLetra;
                         font-family: $fuenteNormal;
                         font-weight: 700;

@@ -26,9 +26,9 @@ $proyectos = [
         "responsable" => "Maria Dolores",
         "fechaEntrega" => "00/00/0000",
         "fechaPago" => "10/04/2025",
-        "estado" => "Activo",
-        "estado2" => "Activo",
-        "pago" => "Q650.00"
+        "estado" => "Pagado",
+        "estado2" => "Pagado",
+        "pago" => "Q675.00"
     ],
 ]
 ?>

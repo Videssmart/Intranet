@@ -40,7 +40,7 @@ $anuncios = [
                 <img src="assets/novedadesImg/hubSpot.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="assets/novedadesImg/banrural.png" class="d-block w-100" alt="...">
+                <img src="assets/novedadesImg/pago.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
                 <img src="assets/novedadesImg/drive.png" class="d-block w-100" alt="...">
