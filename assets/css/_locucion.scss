@@ -13,6 +13,7 @@ $fuenteBold: garet-bold;
 $fuenteNormal: garet-normal;
 $fondoBoton: rgba(145, 38, 216, 0.808);
 $fondoBoton2: rgba(106, 113, 117, 0.274);
+$fondoBotonHover: rgb(25, 25, 233);
 $fondoPagina: #131312;
 $fondoExtras: rgb(27, 27, 27);
 $fondoOscuroClaro: rgb(41, 41, 41); 
@@ -66,6 +67,10 @@ $colorVinetas: rgb(197, 40, 40);
                 font-family: $fuenteNormal;
                 font-weight: 700;
                 border-radius: 5px;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    background-color: $fondoBotonHover;
+                }
             }
             .buttonManual{
                 background-color: $fondoBoton2;
@@ -75,6 +80,11 @@ $colorVinetas: rgb(197, 40, 40);
                 font-family: $fuenteNormal;
                 font-weight: 700;
                 border-radius: 5px;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.884);
+                    color: $fondoPagina;
+                }
             }
         }
     }

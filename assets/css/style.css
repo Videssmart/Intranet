@@ -265,64 +265,266 @@
 @font-face {
   font-family: garet-bold;
   src: url(../fuentes/Garet-Heavy.otf); }
-.flujoDeTrabajo {
+.bannerFlujo {
+  background-color: #131312;
+  height: 40vw;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  background-color: #111827;
-  height: 45vw;
-  padding-left: 2vw; }
-  .flujoDeTrabajo h2 {
-    background: linear-gradient(#9caff0, #811cdf);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-family: garet-bold;
-    font-size: 4vw; }
-  .flujoDeTrabajo p {
-    font-family: garet-normal;
-    font-size: 1.8vw;
-    font-weight: 700;
-    color: lightgray;
-    width: 80vw; }
-  .flujoDeTrabajo a button {
-    background-color: #2d82f1;
-    border: none;
-    padding: 10px 5px 10px 5px;
-    border-radius: 50px;
-    height: 5vw;
-    width: 40vw;
-    font-family: garet-bold;
+  justify-content: start;
+  align-items: center;
+  padding-left: 3vw; }
+  .bannerFlujo h2 {
     color: white;
-    font-size: 2vw;
-    transition: all .4s ease-in-out; }
-    .flujoDeTrabajo a button:hover {
-      background-color: #1919e9; }
+    font-family: garet-bold;
+    font-size: 5vw;
+    width: 90vw; }
+    .bannerFlujo h2 .iconBannerFlujo {
+      position: relative;
+      top: 5px; }
 
-.mapaFlujoTrabajo {
-  background-color: #19212e;
-  padding-bottom: 4vw; }
-  .mapaFlujoTrabajo .servicios {
-    display: grid;
-    justify-items: center;
+.cuadroServicios {
+  background-color: #292929;
+  padding-top: 3vw; }
+  .cuadroServicios .imagenServicios {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr); }
-    .mapaFlujoTrabajo .servicios .servicio {
-      background-color: #111827;
-      padding-block: 2vw;
-      width: 90%;
-      text-align: center;
-      border-radius: 20px;
-      transition: all .3s ease-in-out; }
-      .mapaFlujoTrabajo .servicios .servicio:hover {
-        transform: scale(1.04); }
-      .mapaFlujoTrabajo .servicios .servicio h3 {
-        font-family: garet-bold;
-        background: linear-gradient(#9caff0, #811cdf);
-        -webkit-background-clip: text;
-        color: transparent;
+    padding-block: 2vw; }
+    .cuadroServicios .imagenServicios img {
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.678) 0px 2px 4px, rgba(0, 0, 0, 0.664) 0px 7px 13px -3px, rgba(0, 0, 0, 0.61) 0px -3px 0px inset; }
+
+.diagrama {
+  background-color: #131312;
+  padding-top: 3vw; }
+  .diagrama .diagramaCuadro {
+    margin-block: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    margin-inline: 4vw;
+    padding-block: 2vw;
+    border-radius: 5px; }
+    .diagrama .diagramaCuadro p {
+      color: #cbd0dd;
+      font-family: garet-normal; }
+    .diagrama .diagramaCuadro .circulosTrabajo .listEtapas {
+      display: flex;
+      padding-block: 6vw;
+      color: white;
+      list-style-type: none;
+      gap: 80px;
+      padding-left: 0; }
+      .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .etapa {
+        background-color: #182b4b;
+        padding: 1.5vw;
+        border-radius: 90px;
+        height: 10vw;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: all .4s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .etapa:hover {
+          transform: scale(1.06); }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .etapa h4 {
+          margin: 0;
+          padding: 0; }
+      .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e1 {
+        background-color: #2e89d4; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e1:before {
+          content: 'Primer contacto con el cliente. Recopilación de información y necesidades para iniciar el proyecto.';
+          position: absolute;
+          opacity: 0;
+          width: 54vw;
+          top: -4vw;
+          left: 0;
+          background-color: white;
+          color: #131312;
+          padding-left: 1vw;
+          padding-block: .8vw;
+          border-radius: 5px;
+          z-index: 5;
+          transition: all .4s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e1:hover:before {
+          opacity: 1; }
+      .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e2 {
+        background-color: #be58d8; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e2:before {
+          content: 'Análisis de requerimientos y preparación de propuestas económica para el cliente.';
+          position: absolute;
+          opacity: 0;
+          width: 45vw;
+          top: -4vw;
+          left: 0;
+          background-color: white;
+          color: #131312;
+          padding-left: 1vw;
+          padding-block: .8vw;
+          border-radius: 5px;
+          z-index: 5;
+          transition: all .4s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e2:hover:before {
+          opacity: 1; }
+      .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e3 {
+        background-color: #df4242; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e3:before {
+          content: 'Etapa en la que se llega a un acuerdo con el cliente y se realiza el cierre exitoso de la negociación.';
+          position: absolute;
+          opacity: 0;
+          width: 54vw;
+          top: -4vw;
+          left: 0;
+          background-color: white;
+          color: #131312;
+          padding-left: 1vw;
+          padding-block: .8vw;
+          border-radius: 5px;
+          z-index: 5;
+          transition: all .4s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e3:hover:before {
+          opacity: 1; }
+      .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e4 {
+        background-color: #2caf2c; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e4:before {
+          content: 'Implementación técnica integrando todos los elementos visuales y de audio.';
+          position: absolute;
+          opacity: 0;
+          width: 44vw;
+          top: -4vw;
+          left: -17vw;
+          background-color: white;
+          color: #131312;
+          padding-left: 1vw;
+          padding-block: .8vw;
+          border-radius: 5px;
+          z-index: 5;
+          transition: all .4s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e4:hover:before {
+          opacity: 1; }
+      .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e5 {
+        background-color: rgba(36, 36, 177, 0.918); }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e5:before {
+          content: 'El cliente realiza la revisión del poryecto y si el cliente esta de acuerdo se pasa a la siguiente etapa.';
+          position: absolute;
+          opacity: 0;
+          width: 54vw;
+          top: -4vw;
+          left: -27vw;
+          background-color: white;
+          color: #131312;
+          padding-left: 1vw;
+          padding-block: .8vw;
+          border-radius: 5px;
+          z-index: 5;
+          transition: all .4s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e5:hover:before {
+          opacity: 1; }
+      .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e6 {
+        background-color: #f36229; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e6:before {
+          content: 'Revisión final, entrega al cliente y seguimiento post-entrega.';
+          position: absolute;
+          opacity: 0;
+          width: 34vw;
+          top: -4vw;
+          left: -20vw;
+          background-color: white;
+          color: #131312;
+          padding-left: 1vw;
+          padding-block: .8vw;
+          border-radius: 5px;
+          z-index: 5;
+          transition: all .4s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
+        .diagrama .diagramaCuadro .circulosTrabajo .listEtapas .e6:hover:before {
+          opacity: 1; }
+
+.resumenTrabajo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .resumenTrabajo .listResumen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-family: garet-bold;
+    gap: 70px;
+    color: white;
+    font-size: 1.5vw;
+    padding-left: 0; }
+    .resumenTrabajo .listResumen li {
+      display: flex;
+      gap: 10px; }
+      .resumenTrabajo .listResumen li p {
+        margin: 0; }
+      .resumenTrabajo .listResumen li h5 {
         margin: 0;
-        font-size: 2.5vw; }
+        position: relative;
+        top: 3px; }
+      .resumenTrabajo .listResumen li .iconResumen {
+        position: relative;
+        top: 3px; }
+    .resumenTrabajo .listResumen .r1 {
+      color: #3998f1; }
+    .resumenTrabajo .listResumen .r2 {
+      color: #bd51d8; }
+    .resumenTrabajo .listResumen .r3 {
+      color: #dbdb3e; }
+    .resumenTrabajo .listResumen .r4 {
+      color: #3be23b; }
+    .resumenTrabajo .listResumen .r5 {
+      color: #ec3d3d; }
+
+.protocolosFase {
+  background-color: #292929;
+  padding-top: 3vw; }
+  .protocolosFase p {
+    color: #cbd0dd;
+    font-family: garet-normal;
+    font-weight: 700;
+    padding-left: 1vw;
+    padding-bottom: 2vw;
+    font-size: 1.3vw; }
+  .protocolosFase .fases {
+    padding-inline: 2vw;
+    padding-bottom: 4vw; }
+    .protocolosFase .fases .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+      .protocolosFase .fases .accordion .accordion-item {
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+        .protocolosFase .fases .accordion .accordion-item .accordion-header .accordion-button {
+          border-radius: 10px;
+          display: flex;
+          gap: 10px;
+          font-size: 1.4vw;
+          font-family: garet-bold; }
+          .protocolosFase .fases .accordion .accordion-item .accordion-header .accordion-button .icon {
+            font-size: 1.4vw; }
+        .protocolosFase .fases .accordion .accordion-item .accordion-collapse .accordion-body .info {
+          font-family: garet-normal; }
+          .protocolosFase .fases .accordion .accordion-item .accordion-collapse .accordion-body .info strong {
+            font-family: garet-bold; }
+          .protocolosFase .fases .accordion .accordion-item .accordion-collapse .accordion-body .info .herramientas .hr {
+            display: flex;
+            gap: 20px;
+            font-family: garet-normal;
+            color: #131312;
+            font-weight: 700;
+            list-style-type: none;
+            padding-left: 0; }
 
 @font-face {
   font-family: garet-normal;
@@ -636,10 +838,10 @@
     border-radius: 20px;
     width: 80vw; }
     .proyectos .progreso h3 {
-      color: #168fbe;
+      color: #7c7c7c;
       font-family: garet-bold; }
     .proyectos .progreso p {
-      color: lightgray;
+      color: #7c7c7c;
       font-family: garet-normal; }
     .proyectos .progreso .progress .progress-bar {
       font-family: garet-normal; }
@@ -1080,7 +1282,10 @@
         padding: 1vw 2vw;
         font-family: garet-normal;
         font-weight: 700;
-        border-radius: 5px; }
+        border-radius: 5px;
+        transition: all .4s ease-in-out; }
+        .locucionBanner .banner .buttonsBanner .buttonScript:hover {
+          background-color: #1919e9; }
       .locucionBanner .banner .buttonsBanner .buttonManual {
         background-color: rgba(106, 113, 117, 0.274);
         border: solid 1px white;
@@ -1088,7 +1293,11 @@
         padding: 1vw 2vw;
         font-family: garet-normal;
         font-weight: 700;
-        border-radius: 5px; }
+        border-radius: 5px;
+        transition: all .4s ease-in-out; }
+        .locucionBanner .banner .buttonsBanner .buttonManual:hover {
+          background-color: rgba(255, 255, 255, 0.884);
+          color: #131312; }
 
 .guiaRapida {
   background-color: #131312; }

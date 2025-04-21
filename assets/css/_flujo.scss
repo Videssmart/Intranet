@@ -13,87 +13,343 @@ $fuenteBold: garet-bold;
 $fuenteNormal: garet-normal;
 $fondoBoton: rgb(45, 130, 241);
 $fondoBotonHover: rgb(25, 25, 233);
-$fondoPagina: #111827;
-$fondoPagina2: #19212e;
+$fondoPagina: #131312;
+$fondoOscuroClaro: rgb(41, 41, 41);
 $colorExtras: #182b4b;
-$colorLetra2: rgb(211, 211, 211);
-$colorLetra3: rgb(22, 143, 190);
+$colorLetraSoporte: rgb(203, 208, 221);
 
-.flujoDeTrabajo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+
+.bannerFlujo {
     background-color: $fondoPagina;
-    height: 45vw;
-    padding-left: 2vw;
+    height: 40vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 3vw;
 
     h2 {
-        background: linear-gradient(rgb(156, 175, 240), rgb(129, 28, 223));
-        -webkit-background-clip: text;
-        color: transparent;
+        color: $colorLetra;
         font-family: $fuenteBold;
-        font-size: 4vw;
-    }
+        font-size: 5vw;
+        width: 90vw;
 
-    p {
-        font-family: $fuenteNormal;
-        font-size: 1.8vw;
-        font-weight: 700;
-        color: $colorLetra2;
-        width: 80vw;
-    }
-
-    a {
-        button {
-            background-color: $fondoBoton;
-            border: none;
-            padding: 10px 5px 10px 5px;
-            border-radius: 50px;
-            height: 5vw;
-            width: 40vw;
-            font-family: $fuenteBold;
-            color: $colorLetra;
-            font-size: 2vw;
-            transition: all .4s ease-in-out;
-
-            &:hover {
-                background-color: $fondoBotonHover;
-            }
+        .iconBannerFlujo {
+            position: relative;
+            top: 5px;
         }
     }
 }
 
+.cuadroServicios {
+    background-color: $fondoOscuroClaro;
+    padding-top: 3vw;
 
-.mapaFlujoTrabajo {
-    background-color: $fondoPagina2;
-    padding-bottom: 4vw;
-
-    .servicios {
-        display: grid;
-        justify-items: center;
+    .imagenServicios {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        grid-template-columns: repeat(3, 1fr);
+        padding-block: 2vw;
 
-        .servicio {
-            background-color: $fondoPagina;
-            padding-block: 2vw;
-            width: 90%;
-            text-align: center;
-            border-radius: 20px;
-            transition: all .3s ease-in-out;
-            &:hover{
-                transform: scale(1.04);
-            }
-            h3{
-                font-family: $fuenteBold;
-                background: linear-gradient(rgb(156, 175, 240), rgb(129, 28, 223));
-                -webkit-background-clip: text;
-                color: transparent;
-                margin: 0;
-                font-size: 2.5vw;
+        img {
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.678) 0px 2px 4px, rgba(0, 0, 0, 0.664) 0px 7px 13px -3px, rgba(0, 0, 0, 0.61) 0px -3px 0px inset;
+        }
+    }
+}
+
+
+.diagrama {
+    background-color: $fondoPagina;
+    padding-top: 3vw;
+
+    .diagramaCuadro {
+        margin-block: 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $fondoOscuroClaro;
+        margin-inline: 4vw;
+        padding-block: 2vw;
+        border-radius: 5px;
+
+        p {
+            color: $colorLetraSoporte;
+            font-family: $fuenteNormal;
+        }
+
+        .circulosTrabajo {
+            .listEtapas {
+                display: flex;
+                padding-block: 6vw;
+                color: $colorLetra;
+                list-style-type: none;
+                gap: 80px;
+                padding-left: 0;
+
+                .etapa {
+                    background-color: $colorExtras;
+                    padding: 1.5vw;
+                    border-radius: 90px;
+                    height: 10vw;
+                    width: 10vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    transition: all .4s ease-in-out;
+                    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+                    &:hover{
+                        transform: scale(1.06);
+                    }
+
+                    h4 {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                .e1{
+                    background-color: rgb(46, 137, 212);
+                    &:before{
+                        content: 'Primer contacto con el cliente. Recopilación de información y necesidades para iniciar el proyecto.';
+                        position: absolute;
+                        opacity: 0;
+                        width: 54vw;
+                        top: -4vw;
+                        left: 0;
+                        background-color: $colorLetra;
+                        color: $fondoPagina;
+                        padding-left: 1vw;
+                        padding-block: .8vw;
+                        border-radius: 5px;
+                        z-index: 5;
+                        transition: all .4s ease-in-out;
+                        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                    }
+                    &:hover:before{
+                        opacity: 1;
+                    }
+                }
+                .e2{
+                    background-color: rgb(190, 88, 216);
+                    &:before{
+                        content: 'Análisis de requerimientos y preparación de propuestas económica para el cliente.';
+                        position: absolute;
+                        opacity: 0;
+                        width: 45vw;
+                        top: -4vw;
+                        left: 0;
+                        background-color: $colorLetra;
+                        color: $fondoPagina;
+                        padding-left: 1vw;
+                        padding-block: .8vw;
+                        border-radius: 5px;
+                        z-index: 5;
+                        transition: all .4s ease-in-out;
+                        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                    }
+                    &:hover:before{
+                        opacity: 1;
+                    }
+                }
+                .e3{
+                    background-color: rgb(223, 66, 66);
+                    &:before{
+                        content: 'Etapa en la que se llega a un acuerdo con el cliente y se realiza el cierre exitoso de la negociación.';
+                        position: absolute;
+                        opacity: 0;
+                        width: 54vw;
+                        top: -4vw;
+                        left: 0;
+                        background-color: $colorLetra;
+                        color: $fondoPagina;
+                        padding-left: 1vw;
+                        padding-block: .8vw;
+                        border-radius: 5px;
+                        z-index: 5;
+                        transition: all .4s ease-in-out;
+                        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                    }
+                    &:hover:before{
+                        opacity: 1;
+                    }
+                }
+                .e4{
+                    background-color: rgb(44, 175, 44);
+                    &:before{
+                        content: 'Implementación técnica integrando todos los elementos visuales y de audio.';
+                        position: absolute;
+                        opacity: 0;
+                        width: 44vw;
+                        top: -4vw;
+                        left: -17vw;
+                        background-color: $colorLetra;
+                        color: $fondoPagina;
+                        padding-left: 1vw;
+                        padding-block: .8vw;
+                        border-radius: 5px;
+                        z-index: 5;
+                        transition: all .4s ease-in-out;
+                        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                    }
+                    &:hover:before{
+                        opacity: 1;
+                    }
+                }
+                .e5{
+                    background-color: rgba(36, 36, 177, 0.918);
+                    &:before{
+                        content: 'El cliente realiza la revisión del poryecto y si el cliente esta de acuerdo se pasa a la siguiente etapa.';
+                        position: absolute;
+                        opacity: 0;
+                        width: 54vw;
+                        top: -4vw;
+                        left: -27vw;
+                        background-color: $colorLetra;
+                        color: $fondoPagina;
+                        padding-left: 1vw;
+                        padding-block: .8vw;
+                        border-radius: 5px;
+                        z-index: 5;
+                        transition: all .4s ease-in-out;
+                        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                    }
+                    &:hover:before{
+                        opacity: 1;
+                    }
+                }
+                .e6{
+                    background-color: rgb(243, 98, 41);
+                    &:before{
+                        content: 'Revisión final, entrega al cliente y seguimiento post-entrega.';
+                        position: absolute;
+                        opacity: 0;
+                        width: 34vw;
+                        top: -4vw;
+                        left: -20vw;
+                        background-color: $colorLetra;
+                        color: $fondoPagina;
+                        padding-left: 1vw;
+                        padding-block: .8vw;
+                        border-radius: 5px;
+                        z-index: 5;
+                        transition: all .4s ease-in-out;
+                        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                    }
+                    &:hover:before{
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
 }
 
+
+.resumenTrabajo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .listResumen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        font-family: $fuenteBold;
+        gap: 70px;
+        color: $colorLetra;
+        font-size: 1.5vw;
+        padding-left: 0;
+        li{
+            display: flex;
+            gap: 10px;
+            p{
+                margin: 0;
+            }
+            h5{
+                margin: 0;
+                position: relative;
+                top: 3px;
+            }
+            .iconResumen{
+                position: relative;
+                top: 3px;
+            }
+        }
+        .r1{
+            color: rgb(57, 152, 241);
+        }
+        .r2{
+            color: rgb(189, 81, 216);
+        }
+        .r3{
+            color: rgb(219, 219, 62);
+        }
+        .r4{
+            color: rgb(59, 226, 59);
+        }
+        .r5{
+            color: rgb(236, 61, 61);
+        }
+    }
+}
+
+
+.protocolosFase{
+    background-color: $fondoOscuroClaro;
+    padding-top: 3vw;
+    p{
+        color: $colorLetraSoporte;
+        font-family: $fuenteNormal;
+        font-weight: 700;
+        padding-left: 1vw;
+        padding-bottom: 2vw;
+        font-size: 1.3vw;
+    }
+    .fases{
+        padding-inline: 2vw;
+        padding-bottom: 4vw;
+        .accordion{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .accordion-item{
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                .accordion-header{
+                    .accordion-button{
+                        border-radius: 10px;
+                        display: flex;
+                        gap: 10px;
+                        font-size: 1.4vw;
+                        font-family: $fuenteBold;
+                        .icon{
+                            font-size: 1.4vw;
+                        }
+                    }
+                }
+                .accordion-collapse{
+                    .accordion-body{
+                        .info{
+                            strong{
+                                font-family: $fuenteBold;
+                            }
+                            font-family: $fuenteNormal;
+                            .herramientas{
+                                .hr{
+                                    display: flex;
+                                    gap: 20px;
+                                    font-family: $fuenteNormal;
+                                    color: $fondoPagina;
+                                    font-weight: 700;
+                                    list-style-type: none;
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
