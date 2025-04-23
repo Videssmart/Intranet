@@ -30,6 +30,16 @@ $proyectos = [
         "estado2" => "Pagado",
         "pago" => "Q675.00"
     ],
+    [
+        "nombreProyecto" => "Invitación Animada",
+        "cliente" => "Sharon de Elias",
+        "responsable" => "Maria Dolores",
+        "fechaEntrega" => "24/04/2025",
+        "fechaPago" => "25/04/2025",
+        "estado" => "Vigente",
+        "estado2" => "Vigente",
+        "pago" => "Q185.00"
+    ]
 ]
 ?>
 <div class="bannerProyectos">
