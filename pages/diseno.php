@@ -25,8 +25,8 @@ $recursos = [
     [
         "documento" => "uploads/paquetesPosts.pdf#toolbar=0",
         "nombreDoc" => "Paquetes Posts",
-        "download" => "assets/designArchivos/paquetesPosts.png",
-        "descarga" => "paquetesPosts.png",
+        "download" => "assets/designArchivos/paquetesPosts.pdf",
+        "descarga" => "paquetesPosts.pdf",
         "vistaPrevia" => "uploads/paquetesPosts.pdf"
     ]
 
